@@ -107,7 +107,60 @@ j	Condition  (j < 2)	      Action
         // Practice problem 5
         // Write a Java Program to reverse an array
 
+        // int devide = Math.floorDiv(5, 2);
+        // System.out.println("devide:" + devide);
+
+        int[] arr1 = {1, 2, 3, 4, 5};
+
+        for (int i = 0; i < arr1.length / 2; i++) {
+            
+            int front = i;
+            int back = arr1.length - 1 - i;
+
+            /*
+            int frontP = arr1.toString().charAt(i);
+            int backP = arr1.toString().charAt(arr1.length - 1 - i);
+            arr1[front] = backP;
+            arr1[back] = frontP;
+
+
+// arr1.toString() does not give the actual array elements as a string.
+// Instead, it returns a memory reference like [I@some_hashcode], which is meaningless for your logic.
+// So, charAt(i) will not fetch actual numbers from the array but instead random characters from that reference string.
+
+             */
+
+             
+            int temp = arr1[front];
+            arr1[front] = arr1[back];
+            arr1[back] = temp;
+
+        }
+
+        // System.out.println("Reversed array: " + java.util.Arrays.toString(arr1));
         
+        // Printing array elements without converting to a string
+        for (int elements : arr1) {
+            System.out.print(elements + " ");
+        }
+
+        int[] arr2 = {1, 2, 3, 4, 5, 6};
+        // int l = arr.length;
+
+        int n = Math.floorDiv(arr2.length, 2);
+
+        System.out.println("\nReversed array: ");
+
+        for (int index = 0; index < n; index++) {
+            // swap a[i] and a[l- 1 - i]
+            int temp = arr2[index];
+            arr2[index] = arr2[arr.length - 1 - index];
+            arr2[arr.length - 1 - index] = temp;
+        }// same logic as upper we just didnt stored anything in values
+
+        for (int elements : arr2) {
+            System.out.print(elements + " ");
+        }
 
     }
 }
