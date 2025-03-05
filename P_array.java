@@ -162,5 +162,58 @@ j	Condition  (j < 2)	      Action
             System.out.print(elements + " ");
         }
 
+        // Practice problem 6
+        // Write a Java program to find the maximum element in an array
+
+        int[] arr3 = {1, 2, 3, 4, 5};
+        int max = arr3[0];
+
+        for (int i = 1; i < arr3.length; i++) {
+            if (arr3[i] > max) {
+                max = arr3[i];
+            }
+        }
+        
+        System.out.println("\nMaximum element in the array: " + max);
+
+        System.out.println(Integer.MAX_VALUE);
+        System.out.println(Integer.MIN_VALUE);
+
+        // Practice problem 7
+        // Write a Java program to find the minimum element in an array
+
+        int[] arr4 = {1, 2, 3, 4, 5};
+        int min = arr4[0];
+
+        for (int i = 1; i < arr4.length; i++) {
+            if (arr4[i] < min) {
+                min = arr4[i];
+            }
+        }
+        
+        System.out.println("Minimum element in the array: " + min);
+
+        // Practice problem 8
+        // Write a Java program to find whether an array is sorted or not
+
+        int[] arr5 = {1, 2, 3, 4, 5};
+        boolean isSorted = true;
+        //  checking the position (index)
+        for (int i = 0; i < arr5.length - 1; i++) { // 0 < 4(5-1) = ✅ arr5[i] > arr5[i + 1] -> arr5[0] > arr5[i + 1] ->  arr5[0] > arr5[0 + 1] => 1 > 1+1 -> 1 > 2 ❌ , 1 < 4 ✅  arr5[i] > arr5[i + 1] -> arr5[1] > arr5[1 + 1] -> arr5[1] > arr5[2] -> 2 > 3 ❌ , 2 < 4 ✅ arr5[i] > arr5[i + 1] -> arr5[2] > arr5[2 + 1] -> 3 > 4 => ❌ , 3 < 4 ✅ arr5[i] > arr5[i + 1] => arr5[3] > arr5[3+1] -> 4 > 5 ❌, 4 < 4 ❌(Loop stops)
+            if (arr5[i] > arr5[i + 1]) {// 1 is for the next position
+                isSorted = false;// then we would have need to swap so we have taken it as false
+                break;
+            }
+        }
+        
+        System.out.println("Array is sorted: " + isSorted);
+
+        // EXERCISE
+        // Write a program that fills an array with n integers entered by the user
+
+        // Suppose that the user can enter atleast 1 number and at most 20 numbers
+
+        
+
     }
 }
