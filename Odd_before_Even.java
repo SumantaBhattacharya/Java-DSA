@@ -15,6 +15,8 @@ public abstract class Odd_before_Even {
     public static void main(String[] args) {
 
         int[] arr = {1, 2, 4, 5, 7, 9, -2, 3};
+        System.out.println("Original array: " + Arrays.toString(arr));
+
         // for iterate over this original array we are going to use for loop with a variable 'i'.
         // in each iteration, we will echeck if the current element is an even number or an odd number if it is a odd number we want to add it to the beginning of the temp array at the index j 
         // temp[j++] = arr[i]; // i will be increment at each time it finishes its executiong the first iteration of the loop so now 'i' is at the second element. 
@@ -40,30 +42,56 @@ public abstract class Odd_before_Even {
         // initialized to 0.
         
         // Here, temp is used to store the odd numbers and then place them before the even numbers in the original array
-        // int[] temp = new int[arr.length];
+        int[] temp = new int[arr.length];
 
-        int[] temp = {0, 0, 0, 0, 0, 0, 0, 0};
+        // int[] temp = {0, 0, 0, 0, 0, 0, 0, 0};
         // to be able to add elements to the beginning of the temp array and to the end we will use two values 
 // for example- a variable called 'j' to answer at the beginning and a variable called 'k' to answer at the end.
 // so the initial value of the 'j' is equal to 0 and the initial value of the 'k' is equal to the length - 1
                 
 
-        // int j = 0; // Index for the beginning of temp array
-        // int k = arr.length - 1; // Index for the ending of the temp array
+        int j = 0; // Index for the beginning of temp array
+        int k = arr.length - 1; // Index for the ending of the temp array
 
-        oddBeforeEven(arr);
-        System.out.println(Arrays.toString(arr)); // Output: [1, 5, 7, 9, 3, -2, 4, 2]
+        // oddBeforeEven(arr);
 
+        // Iterate through the array from the last element to the first element
+        for (int i = 0; i < arr.length; i++) {
+            // If the current element is odd, add it to the beginning of the temp array(if it is an odd elementthen we will insert it at the index j and will increment 'j');
+            if(arr[i] % 2 != 0){
+                temp[j] = arr[i];
+                j++;
+                // temp[j++] = arr[i];
+            }else{// arr[i] % 2 = 0
+                // If the current element is even, add it to the end of the temp array(if it is an even element then we will insert it at the index k and will decrement 'k');
+                // temp[k] = arr[i];
+                // k--;
+                temp[k--] = arr[i];
+            }
+            
+        }
+        // After we have inserted all the odd numbers at the beginning of the temp array and all the even numbers at the end of the temp array,
+        // we will copy the elements of temp array to the original array
+        // Copy the elements of temp array to the original array
+        // System.arraycopy(temp, 0, arr, 0, arr.length);  // Note: this method will not modify the original array, it will create a new array and copy the elements of the temp array to it.  // arr = temp.clone(); // this will also create a new array and copy the elements of the temp array to it.  // arr = Arrays.copyOf(temp, temp.length); // this will also create a new array and copy the elements of the temp array to it.  // arr = Arrays.copyOfRange(temp, 0, temp.length); // this will also create a new array and copy the elements of the temp array to it.  // arr = Arrays.copyOf(arr, arr.length); // this will also create a new array and copy the elements of the original array to it.  // arr = Arrays.copyOf(arr, arr.length); // this will also create a new
+        // arr = Arrays.copyOf(arr, arr.length); // this will also create a new array and copy the elements of the original array to it.  // arr = Arrays.copyOf(arr, arr.length); // this will also create a new array and copy the elements of the original array to it.  // arr = Arrays.copyOf(arr, arr.length); // this will also create a new array and copy the elements of the original array to it.
+        
+        copyArray(temp,arr);
 
-
+            // Print the modified array
+            System.out.println("Modified array: " + Arrays.toString(arr));// Output: [1, 5, 7, 9, 3, -2, 4, 2]
 
     }
 
-    public static void oddBeforeEven(int[] arr) {
-
+    /*public static void oddBeforeEven(int[] arr) {
         // Iterate through the array from the last element to the first element
+    }*/
 
-
+    public static void copyArray(int[] temp, int[] arr){
+        for (int i = 0; i < arr.length; i++) {// arr.length / temp.length in this case it doesnot make a difference becaus ethe two arrays the same length so we could also use arr.length  
+            arr[i] = temp[i];// inside this method we will copy the temp array to the numbers array.
+            // System.out.print(arr[i]+" ");
+        }
     }
 
 }
