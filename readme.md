@@ -175,3 +175,13 @@ A function that calls an inner function, where the inner function performs a cal
 9. **Recursive function should not use any built-in functions or libraries that directly solve the problem**  
    *Recursive functions are usually implemented manually to avoid using built-in functions or libraries that have already been optimized for recursion.*
 
+# SPACE & TIME COMPLEXITY
+
+## Time Complexity
+Time complexity defines the relationship between the input size and the running time (or the number of operations) required by an algorithm.
+
+### ***Time Complexity Cases***
+- **Best Case:** The scenario where the algorithm performs the minimum number of operations.
+- **Average Case:** The expected number of operations for a randomly chosen input.
+- **Worst Case:** The scenario where the algorithm performs the maximum number of operations.
+
