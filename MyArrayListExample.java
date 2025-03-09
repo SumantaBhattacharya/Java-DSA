@@ -67,6 +67,7 @@ public class MyArrayListExample {
         list.add(20);
         list.add(30);
         list.add(new Integer(40));
+        list.add(Integer.valueOf(50)); 
         list.addFirst(5);
         list.addLast(60);
 
