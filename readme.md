@@ -141,3 +141,37 @@ Update a bit at a specific position in a number to a given value.
 - (0 → 1, 1 → 0)
 
 ---
+
+# Prerequisites
+
+## 1. Iteration/Loops
+## 2. Functions
+
+A function that calls an inner function, where the inner function performs a calculation and returns a value to the outer function. The main function calls functions that call another function. This cycle continues until the base condition is reached, then the function returns the value to inner functions and finally to the main function.
+
+---
+
+## Characteristics of a Recursive Function
+
+1. **Recursive function must call itself directly or indirectly**  
+   *A recursive function is a function that calls itself to solve a problem.*
+
+2. **Recursive function must have a base case**  
+   *Recursion is a method of solving a problem by breaking it down into smaller subproblems of the same type until a base case is reached.*
+
+3. **Recursive function must have a change in its input to move towards the base case.**
+
+4. **Recursive function must not lead to a stack overflow.**
+
+5. **Recursive function should be efficient and avoid redundant calculations.**
+
+6. **Recursive function should minimize unnecessary additional data structures.**
+
+7. **Recursive function must not use any global variables.**
+
+8. **Recursive function must have a clear and concise return statement**  
+   *The return statement is used to terminate a function and return a value from the function.*
+
+9. **Recursive function should not use any built-in functions or libraries that directly solve the problem**  
+   *Recursive functions are usually implemented manually to avoid using built-in functions or libraries that have already been optimized for recursion.*
+
