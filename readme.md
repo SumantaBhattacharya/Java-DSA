@@ -79,3 +79,65 @@ Set ⬅ i. HashSet ii. LinkedHashSet iii. (Sorted Set <- TreeSet)
 
 ```
 Map ⬅ i. HashMap ii. LinkedHashMap iii. (Sorted Map <- TreeMap) iv. Hashtable
+```
+# **Bit Manipulation in Java**
+
+## **Introduction**
+After Time Complexity, we will learn about **Bit Manipulation**. This involves manipulating bits, which are fundamental units of data in computers. Bitwise operations perform operations on individual bits of a number.
+
+### **Why use Bitwise Operations?**
+- Bitwise operations are **faster** than arithmetic operations.
+- Used in many algorithms to **optimize code** and **reduce time complexity**.
+- Helps in solving problems related to **binary representations** of numbers.
+
+## **Bitwise Operations**
+Bitwise operations include **AND, OR, XOR, NOT, and SHIFT**:
+
+### **1. Bitwise AND (`&`)**
+- The result is **1** if both bits are **1**, otherwise **0**.
+
+### **2. Bitwise OR (`|`)**
+- The result is **1** if either bit is **1**, otherwise **0**.
+
+### **3. Bitwise XOR (`^`)**
+- The result is **1** if the bits are **different**, otherwise **0**.
+
+### **4. Bitwise NOT (`~`)**
+- The result is the **complement** of the bit.
+
+### **5. Bitwise SHIFT (`<<`, `>>`, `>>>`)**
+- Shifts the bits **left** or **right** by a specified number of positions.
+
+## **Applications of Bitwise Operations**
+Bitwise operations are widely used in algorithms for **bit manipulation**, such as:
+- Finding the **maximum or minimum value** in an array.
+- Performing **bitwise operations** on numbers in a computer program.
+- **Optimizing memory usage** and **enhancing computational speed**.
+
+## **Bitwise Operations in Java**
+Java provides the following bitwise operators:
+
+### **1. Bitwise AND (`&`)**
+### **2. Bitwise OR (`|`)**
+### **3. Bitwise XOR (`^`)**
+### **4. Bitwise NOT (`~`)**
+### **5. Bitwise SHIFT (`<<, >>, >>>`)**
+
+## **Basic Bit Manipulation Techniques**
+
+### **1. Get a Bit**
+Retrieve the bit value at a specific position in a number (whether it's `0` or `1`).
+
+### **2. Set a Bit**
+Set a bit at a specific position in a number to `1`.
+- (0 → 1, 1 → 1)
+
+### **3. Clear a Bit**
+Set a bit at a specific position in a number to `0`.
+- (0 → 0, 1 → 0)
+
+### **4. Update a Bit**
+Update a bit at a specific position in a number to a given value.
+- (0 → 1, 1 → 0)
+
+---
