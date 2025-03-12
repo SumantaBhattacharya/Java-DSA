@@ -185,3 +185,25 @@ Time complexity defines the relationship between the input size and the running 
 - **Average Case:** The expected number of operations for a randomly chosen input.
 - **Worst Case:** The scenario where the algorithm performs the maximum number of operations.
 
+# Solved Questions on Array
+
+## 1. Create a list of unique elements taken from the user. Sort and print these.
+
+## 2. Write a program that fills an array with n integers entered by the user.
+
+## 3. Write a program that displays the sum, product, and average of the elements of an integer array.
+
+## 4. Create an array of 5 floats and their sum.
+
+## 5. Write a program to find out whether a given integer is present in an array or not.
+
+## 6. Calculate the average marks from an array containing marks of all students in Physics using a for-each loop.
+
+## 7. Create a Java program to add two matrices of size 2 * 3.
+
+## 8. Write a Java Program to reverse an array.
+
+## 9. Write a Java program to find the maximum element in an array.
+
+## 10. Write a Java program to find whether an array is sorted or not.
+
