@@ -251,3 +251,125 @@ Bubble sort has a space complexity of **O(1)**, meaning it does not use any addi
 - Diamond pattern  
 
 [![Advanced Pattern Questions](https://img.youtube.com/vi/Dr4PpNa7AYo/maxresdefault.jpg)](https://youtu.be/Dr4PpNa7AYo)
+
+
+
+
+
+
+# Basics of Time Complexity and Space Complexity | Java | Complete Placement Course | Lecture 9  
+
+[![Basics of Time Complexity and Space Complexity](https://img.youtube.com/vi/bQssdSrSGNE/maxresdefault.jpg)](https://youtu.be/bQssdSrSGNE)
+
+
+# String Builder | Java Placement Course Lecture 13  
+
+[![String Builder | Java Placement Course Lecture 13](https://img.youtube.com/vi/ZLDwskEhIFg/maxresdefault.jpg)](https://youtu.be/ZLDwskEhIFg)
+
+# Operators & Binary Number System | Java Lecture 14  
+
+[![Operators & Binary Number System](https://img.youtube.com/vi/Oud4alVQU4s/maxresdefault.jpg)](https://youtu.be/Oud4alVQU4s)
+
+# Bit Manipulation | Java Placement Course | Lecture 15  
+
+**Description:**  
+Bit Manipulation helps reduce time complexity in algorithms.  
+
+**Topics Discussed:**  
+- Bit manipulation operations: gate, tweet, clear bit, update  
+- Bit Masking: manipulating bits in a number using a bitwise mask  
+- Setting or clearing specific bits in a number  
+- Performing various operations on binary numbers  
+- Clearing a specific bit position in a number  
+- Using bit manipulation for operations on binary numbers  
+- Bit manipulation operations in Java  
+- Performing different operations based on specific cases  
+- Set and clear operations on binary numbers  
+- Updating bit manipulation operations in Java  
+
+[![Bit Manipulation | Java Placement Course | Lecture 15](https://img.youtube.com/vi/OSoO8eCEEC8/maxresdefault.jpg)](https://youtu.be/OSoO8eCEEC8)
+
+
+[![ArrayList In Java + Notes | Java Placement Course](https://img.youtube.com/vi/liFyhzZl9uw/maxresdefault.jpg)](https://youtu.be/liFyhzZl9uw)
+
+## Explicit Imports in Java
+
+Always use explicit imports; generally considered good practice in Java programming. Explicit imports make your code more readable and maintainable by clearly indicating which classes are being used from external packages.
+
+Explicit imports also help to avoid potential conflicts or ambiguities that can arise when multiple classes with the same name exist in different packages. By specifying the exact classes you need, you make it easier for other developers to understand your code and for the compiler to resolve dependencies correctly.
+
+
+
+[![Java Collections Framework | Java Placement Course](https://img.youtube.com/vi/VphowcSkBX4/maxresdefault.jpg)](https://youtu.be/VphowcSkBX4)
+
+**interfaces cannot implement other interfaces**—they can only **extend** them.
+
+### Explanation:
+- `Iterable` is an interface.
+- `Collection` is also an interface.
+- `Collection` **extends** `Iterable`, not implements it.
+
+The `implements` keyword is used when a **class** implements an interface. Since `Collection` is also an interface, it must use `extends` instead of `implements`.
+
+[![Recursion in One Shot | Theory + Question Practice + Code | Level 1 - Easy](https://img.youtube.com/vi/5Boqfjissv0/maxresdefault.jpg)](https://youtu.be/5Boqfjissv0)
+
+[![Magic or Myth? The Golden Ratio | Fibonacci](https://img.youtube.com/vi/2VNO-UJB2PE/maxresdefault.jpg)](https://youtu.be/2VNO-UJB2PE)
+
+# Java Programming: Programming Question on Arrays in Java Programming
+
+## Topics Discussed:
+
+# Arrays in Java (Exercise 1)
+
+**Description:**  
+- Writing a program that fills an array with n integers entered by the user.  
+- Writing a program that fills an array with n Points entered by the user.  
+
+[![Arrays in Java (Exercise 1)](https://img.youtube.com/vi/gIqnW7ACL9o/maxresdefault.jpg)](https://youtu.be/gIqnW7ACL9o)
+
+
+# Arrays in Java (Exercise 2)
+
+**Description:**  
+Writing a program that displays the sum, product, and average of the elements of an integer array.
+
+[![Arrays in Java (Exercise 2)](https://img.youtube.com/vi/1GRLdNtPpQI/maxresdefault.jpg)](https://youtu.be/1GRLdNtPpQI)
+
+# Arrays in Java (Exercise 3)
+
+- Writing a program that displays the number of occurrences of an element in the array.
+
+[![Arrays in Java (Exercise 3)](https://img.youtube.com/vi/HHsHydWBwJE/maxresdefault.jpg)](https://youtu.be/HHsHydWBwJE)
+
+
+# Arrays in Java (Exercise 4)
+**Writing a program that displays the maximum and minimum elements of an array.**
+
+[![Arrays in Java (Exercise 4)](https://img.youtube.com/vi/G04TZ7sbMUM/maxresdefault.jpg)](https://youtu.be/G04TZ7sbMUM)
+
+
+**Writing a program that puts the odd elements of an array before the even elements**.
+
+[![Arrays in Java (Exercise 5)](https://img.youtube.com/vi/LVNTVxeavBw/maxresdefault.jpg)](https://youtu.be/LVNTVxeavBw)
+
+# Two-Dimensional Arrays in Java (Exercise 1)
+
+**Description:**  
+Java Programming: Programming Exercise on Two-Dimensional Arrays in Java Programming  
+
+**Topics Discussed:**  
+1. Writing a program that prints the sum of each row in a 2D array.  
+2. Writing a program that prints the sum of each column in a 2D array.  
+
+[![Two-Dimensional Arrays in Java (Exercise 1)](https://img.youtube.com/vi/778UYhztFAE/maxresdefault.jpg)](https://youtu.be/778UYhztFAE)
+
+# Two-Dimensional Arrays in Java (Exercise 2)
+
+**Description:**  
+Writing a program that prints the maximum of each row in a 2D array.  
+
+[![Two-Dimensional Arrays in Java (Exercise 2)](https://img.youtube.com/vi/8uxGSiCiqZA/maxresdefault.jpg)](https://youtu.be/8uxGSiCiqZA)
+
+[![ArrayLists (Exercise 1)](https://img.youtube.com/vi/YgkRoY3-ng8/maxresdefault.jpg)](https://youtu.be/YgkRoY3-ng8)
+
+[![ArrayLists (Exercise 2)](https://img.youtube.com/vi/Dcgl-KfLmfA/maxresdefault.jpg)](https://youtu.be/Dcgl-KfLmfA)
