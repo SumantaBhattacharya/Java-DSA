@@ -241,3 +241,13 @@ Bubble sort has a space complexity of **O(1)**, meaning it does not use any addi
 5. Repeat the process for the remaining array (excluding the last sorted element).
 6. Continue until the array is fully sorted.
 
+# Advanced Pattern Questions | Java | Complete Placement Course - Lecture 6  
+
+**Topics Discussed:**  
+- Butterfly pattern  
+- Solid rhombus  
+- Number pyramid  
+- Palindromic pyramid  
+- Diamond pattern  
+
+[![Advanced Pattern Questions](https://img.youtube.com/vi/Dr4PpNa7AYo/maxresdefault.jpg)](https://youtu.be/Dr4PpNa7AYo)
