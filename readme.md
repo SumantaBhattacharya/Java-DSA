@@ -207,6 +207,20 @@ Time complexity defines the relationship between the input size and the running 
 
 ## 10. Write a Java program to find whether an array is sorted or not.
 
+
+# Lec-46: BUBBLE SORT in PYTHON 🐍 with Code 👩‍💻 👨‍💻 | DSA in PYTHON 🐍  
+
+**Description:**  
+Bubble sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. The pass through the list is repeated until no swaps are needed, indicating that the list is sorted. This video analyzes the best and worst-case time complexity.  
+
+**Topics Discussed:**  
+- Bubble sort  
+- Algorithm with example  
+- Best case time complexity  
+- Worst case time complexity  
+
+[![Bubble Sort in Python](https://img.youtube.com/vi/00mmzkOvLlM/maxresdefault.jpg)](https://youtu.be/00mmzkOvLlM)
+
 ## Bubble Sort
 
 Bubble sort is not suitable for large data sets. It has a worst-case and average time complexity of **O(n²)**, where **n** is the number of items being sorted.
