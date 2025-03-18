@@ -373,3 +373,13 @@ Writing a program that prints the maximum of each row in a 2D array.
 [![ArrayLists (Exercise 1)](https://img.youtube.com/vi/YgkRoY3-ng8/maxresdefault.jpg)](https://youtu.be/YgkRoY3-ng8)
 
 [![ArrayLists (Exercise 2)](https://img.youtube.com/vi/Dcgl-KfLmfA/maxresdefault.jpg)](https://youtu.be/Dcgl-KfLmfA)
+
+`Blob URLs are temporary and only work within your current browser session.`
+
+![Java DSA Image](https://github.com/SumantaBhattacharya/Java-DSA/blob/main/46ca4e21-37fb-43d9-a9d0-b47567b31045.jpg?raw=true)
+
+
+<!-- ![Sumanta Bhattacharya's Certificate](https://files.oaiusercontent.com/file-JE1E6PEXch4ahZAhK1q1tq?se=2025-03-17T16%3A04%3A01Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D299%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D6df2b67f-757d-4bf7-83c0-ba9256132c18.jpg&sig=%2BC09WDeIOM%2Buv2SDeUv1InSUVEE9R/p9kD027WgiiwQ%3D) -->
+
+<!-- 
+![Sumanta Bhattacharya's Certificate](https://files.oaiusercontent.com/file-XseJoMyVnsgZGNgLKVnidd?se=2025-03-17T15%3A57%3A29Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D299%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3DSUMANTA%2520BHATTACHARYA.png&sig=frWBZHqTDuXZEHPP7hxhueGPPMYqYtVchpbH%2B4U/y0c%3D) -->
