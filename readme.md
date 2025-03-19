@@ -374,6 +374,41 @@ Writing a program that prints the maximum of each row in a 2D array.
 
 [![ArrayLists (Exercise 2)](https://img.youtube.com/vi/Dcgl-KfLmfA/maxresdefault.jpg)](https://youtu.be/Dcgl-KfLmfA)
 
+# Linear Search
+
+Linear Search is defined as a sequential search algorithm that starts at one end and goes  
+through each element of a list until the desired element is found, otherwise the search  
+continues till the end of the data set.  
+
+## How Does Linear Search Algorithm Work?
+
+- Every element is considered as a potential match for the key and checked for the same.  
+- If any element is found equal to the key, the search is successful and the index of that element is returned.  
+- If no element is found equal to the key, the search yields “No match found”.  
+
+## Time Complexity:
+
+- **Best Case:** In the best case, the key might be present at the first index. So the best case complexity is **O(1)**.  
+- **Worst Case:** In the worst case, the key might be present at the last index i.e., opposite to the end from which the search has started in the list. So the worst-case complexity is **O(N)** where **N** is the size of the list.  
+- **Average Case:** **O(N)**  
+
+## Complexity Analysis of Linear Search:
+
+**Auxiliary Space:** **O(1)** as except for the variable to iterate through the list, no other variable is used.  
+
+## Advantages of Linear Search:
+
+- Linear search can be used irrespective of whether the array is sorted or not. It can be used on arrays of any data type.  
+- Does not require any additional memory.  
+- It is a well-suited algorithm for small datasets.  
+
+## Drawbacks of Linear Search:
+
+- Linear search has a time complexity of **O(N)**, which in turn makes it slow for large datasets.  
+- Not suitable for large arrays.  
+
+![Linear Search Algorithm](https://media.geeksforgeeks.org/wp-content/uploads/20240506105158/Linear-Search-algorithm-banner-(1).webp)
+
 `Blob URLs are temporary and only work within your current browser session.`
 
 ![Java DSA Image](https://github.com/SumantaBhattacharya/Java-DSA/blob/main/46ca4e21-37fb-43d9-a9d0-b47567b31045.jpg?raw=true)
