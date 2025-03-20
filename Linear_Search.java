@@ -27,9 +27,9 @@ public class Linear_Search {
         // lowerCaseQuote.length() - lowerCaseSearchTerm.length()
 
         // check the length first
-        if(str.length() < searchTerm.length()){
-            return false;
-        }
+        if(str.length() < searchTerm.length()){ // str.length() == 0 || searchTerm.length() == 0 then also return false
+            return false; // str.length() always be graeter than searchTerm.length()
+        }// strLength == 0, then searchTerm > strLength can never be true
 
         if (str.length() != 0 && searchTerm.length() != 0) {
             // we could have used the original name it wouldnt make a difference.
