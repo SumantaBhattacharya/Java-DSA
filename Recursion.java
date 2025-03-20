@@ -71,7 +71,10 @@ public class Recursion {
         printSumOfNaturalNumbers(1, 5, 0);// 1 to n
 
         int result = printFactorialOfNumber(n);
-        System.out.println("Factorial of number "+n+" is: "+result);               
+        System.out.println("Factorial of number "+n+" is: "+result);   
+        
+        // Print Fibonacci Series
+        printFibonacciSequence(n);
                                         
             }
         
@@ -301,4 +304,12 @@ int fact_n = n * fact_Ndiff1;
 return fact_n;
 
 }
+
+// Print the fibonacci sequence till nth term
+public static void printFibonacciSequence(int n) {
+    
 }
+
+}
+
+
