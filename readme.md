@@ -411,8 +411,9 @@ continues till the end of the data set.
 
 `Blob URLs are temporary and only work within your current browser session.`
 
-![Java DSA Image](https://github.com/SumantaBhattacharya/Java-DSA/blob/main/46ca4e21-37fb-43d9-a9d0-b47567b31045.jpg?raw=true)
+![Java DSA Image](https://github.com/SumantaBhattacharya/Java-DSA/blob/main/4a2cd984-4f32-45cb-b6ba-4f64e356b9b3.jpg?raw=true)
 
+![Java DSA Image](https://github.com/SumantaBhattacharya/Java-DSA/blob/main/46ca4e21-37fb-43d9-a9d0-b47567b31045.jpg?raw=true)
 
 <!-- ![Sumanta Bhattacharya's Certificate](https://files.oaiusercontent.com/file-JE1E6PEXch4ahZAhK1q1tq?se=2025-03-17T16%3A04%3A01Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D299%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D6df2b67f-757d-4bf7-83c0-ba9256132c18.jpg&sig=%2BC09WDeIOM%2Buv2SDeUv1InSUVEE9R/p9kD027WgiiwQ%3D) -->
 
