@@ -1,4 +1,4 @@
-import java.util.Arrays;
+// import java.util.Arrays;
 
 public class linearSearch_2D {
     public static void main(String[] args) {
@@ -14,6 +14,7 @@ public class linearSearch_2D {
         int target = 04;
         int row = linearSearch(arr, target);
 
+        // This function returns the row index where the target is found, or -1 if it's not found in the array.
         if (row == -1) {
             System.out.println("Element not found.");
         } else {
@@ -43,12 +44,22 @@ public class linearSearch_2D {
         In this case, you can print "Element found at row: " + position[0] + ", column: " + position[1] as usual.
         But in the case of 1D array, you can simply return position[0] as it represents the row index.*/
         
+        // This function returns the row and column index where the target is found, or {-1, -1} if it's not found in the array.
         if (position[0] == -1) {// this could be like this too position[0] == -1 && position[1] == -1
             System.out.println("Element not found.");
         } else {
             System.out.println("Element found at row: " + position[0] + ", column: " + position[1]);
         }// However, since both row and column will always be -1 when not found, checking just position[0] == -1 is enough.
         
+        // System.out.println(Arrays.toString(findMax(arr))); 
+        // This function returns the maximum value in the 2D array.
+        // It uses the Arrays.stream() method to convert the 2D array into a Stream,
+        // then uses the max() method to find the maximum value in the Stream.
+        // Note that this function assumes that the 2D array contains only integers.
+       
+        System.out.println("Maximum value in the array: " + findMax(arr)); // It prints the maximum value in the array.
+        System.out.println("Min value in the array: " +  findMin(arr));
+
     }
 
     // search in the 2D array: return the row index if the item found
@@ -102,8 +113,74 @@ public class linearSearch_2D {
     }
 
     // find maximum in 2D array
+    public static int findMax(int[][] arr) {
+        
+        // Integer.MIN_VALUE works for both 1D and 2D arrays because it ensures that any value in the array will replace it safely.
 
-    
+        // If arr is an empty array (arr.length == 0), directly accessing arr[0][0] would cause an ArrayIndexOutOfBoundsException.
+        // With Integer.MIN_VALUE, the function can still return a meaningful value (Integer.MIN_VALUE), indicating no valid max exists.
+        int max = Integer.MIN_VALUE; // Integer.MIN_VALUE is the smallest possible integer (-2,147,483,648)
+        // When iterating through the array, any number in the array will be greater than Integer.MIN_VALUE, so it will always be updated.
+        // Integer.MIN_VALUE is a safer initialization when dealing with 2D arrays since it avoids potential exceptions.
+        
+        // int max = arr[0][0] // as this is the first element considered as the lowest of all in 2D we use Integer.MIN_VALUE which is the lowest of all but not from the the array 
+        // If you are sure that the 2D array is not empty and all rows have at least one element, you can initialize max with arr[0][0]
+        // ensures that the first valid value is chosen as the initial max
+
+        /*for (int i = 0; i < arr.length; i++) { 
+            for (int j = 0; j < arr[i].length; j++) {
+                
+                if (arr[i][j] > max) {
+                    max = arr[i][j];
+                }
+
+            }
+        }*/
+
+        // Outer loop: Iterates over each row (1D array)
+        for (int[] el : arr) { 
+            // Inner loop: Iterates over each element in the row
+            /*
+            This is a more efficient way to find the maximum value in a 2D array, especially when dealing with large arrays.
+            It avoids unnecessary iterations over the same row multiple times.
+            'el' is a reference to a single 1D array (row).
+            We use a for-each loop to iterate through each element (e) in that row (el).*/
+            // el is a 1D array (a row of numbers), and its elements are individual integers (not arrays). That’s why we use int e instead of int[] e.
+            for (int e : el) { // iterates through each element (e) in that row (el).
+                if (e > max) {// 'e' is a single integer (one element from the row).
+                    max = e;
+                }
+            }
+        }
+
+        return max;
+
+    }
+
+    // find minimum in 2D array
+    public static int findMin(int[][] arr) {
+        // If arr is an empty array (arr.length == 0), directly accessing arr[0][0] would cause an ArrayIndexOutOfBoundsException.
+        // With Integer.MAX_VALUE, the function can still return a meaningful value (Integer.MAX_VALUE), indicating no valid min exists.
+        int min = Integer.MAX_VALUE;
+        // Integer.MAX_VALUE is a safer initialization when dealing with 2D arrays since it avoids potential exceptions.
+        
+        // int min = arr[i][j]
+        // If you are sure that the 2D array is not empty and all rows have at least one element, you can initialize min with arr[0][0]
+        // ensures that the first valid value is chosen as the initial min
+
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                
+                if (arr[i][j] < min) {
+                    min = arr[i][j];
+                }
+
+            }
+        }
+
+        return min;
+
+    }
 
     // [Additional Notes]:
     // Note: The time complexity of this linear search algorithm is O(n*m), where n is the number of rows and m is the number of columns.
