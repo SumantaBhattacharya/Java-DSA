@@ -409,6 +409,33 @@ continues till the end of the data set.
 
 ![Linear Search Algorithm](https://media.geeksforgeeks.org/wp-content/uploads/20240506105158/Linear-Search-algorithm-banner-(1).webp)
 
+# Linear Search Algorithm - Theory + Code + Questions  
+
+[![Linear Search Algorithm](https://img.youtube.com/vi/_HRA37X8N_Q/maxresdefault.jpg)](https://youtu.be/_HRA37X8N_Q?si=ynbNCRnQtTCauUK8)  
+
+**Video:** [Watch here](https://youtu.be/_HRA37X8N_Q?si=ynbNCRnQtTCauUK8)  
+
+## Topics Covered:  
+- What is Searching?  
+- Linear Search  
+- Code for Linear Search  
+- 🎯 Questions:  
+  - Search in String  
+  - Search in Range  
+  - Minimum Number  
+  - Search in 2D Arrays  
+  - Even Digits (with Optimized Solution)  
+  - Max Wealth  
+
+`Leetcode solved problems`
+## 1️⃣ Find Numbers with Even Number of Digits  
+**Problem:** [Find Numbers with Even Number of Digits](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/)  
+
+---
+
+## 2️⃣ Richest Customer Wealth  
+**Problem:** [Richest Customer Wealth](https://leetcode.com/problems/richest-customer-wealth/)  
+
 `Blob URLs are temporary and only work within your current browser session.`
 
 ![Java DSA Image](https://github.com/SumantaBhattacharya/Java-DSA/blob/main/4a2cd984-4f32-45cb-b6ba-4f64e356b9b3.jpg?raw=true)
