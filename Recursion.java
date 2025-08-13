@@ -47,6 +47,9 @@ public class Recursion {
 
     */
 
+    // main function
+    // the main function is the entry point of the program, where the execution starts.
+
     public static void main(String[] args) {
         int n =5;
         int num = 1;
@@ -74,12 +77,14 @@ public class Recursion {
         System.out.println("Factorial of number "+n+" is: "+result);   
         
         // Print Fibonacci Series
-        printFibonacciSequence(n);
+        printFibonacciSequence(0, num, n-2);// 0, 1, 5-2 = 3, so we need to print 3 terms of fibonacci series
                                         
-            }
+    }
         
-                // Print Numbers from 5 to 1
-        public static void printNumbers(int n){
+    // methods 
+    // A method is a block of code that performs a specific task. It is used to define a function in Java.
+    // Print Numbers from 5 to 1
+    public static void printNumbers(int n){
 
         if(n == 0){// variable is created mutiple times in each recursion created a memory space which is not same as in iteration
             return; // base case
@@ -306,8 +311,73 @@ return fact_n;
 }
 
 // Print the fibonacci sequence till nth term
-public static void printFibonacciSequence(int n) {
-    
+// 0 1 1 2 3 5 8 13 21 34 55 ...
+// The Fibonacci sequence is a series of numbers in which each number is the sum of the two
+// preceding ones, usually starting with 0 and 1. The sequence is defined by the recurrence relation:
+// F(n) = F(n-1) + F(n-2) with seed values
+// F(0) = 0 and F(1) = 1.
+
+/*
+The Fibonacci sequence is defined as follows:
+
+public class Fibonacci {
+
+    public static void main(String[] args) {
+
+    int n = 10; // Number of terms in the Fibonacci sequence
+    int a = 0; // First term
+    int b = 1; // Second term
+
+    for (int i = 0; i < n; i++) {
+
+    System.out.print(a + " "); // a's value getting update
+
+    // update
+        int next = a + b; // Calculate the next term
+        a = b; // Update a to the next term
+        b = next; // Update b to the next term
+    }
+}
+
+public class Fibo {
+
+   public static void main (String args[]) {
+        int n = 10; // Number of terms in the Fibonacci sequence
+
+        int[] fib = new int[n];
+
+        fib[0] = 0; // First term
+        fib[1] = 1; // Second term
+
+        // first two are filled so, start from index 2
+        for (int i = 2; i < n; i++) {
+            fib[i] = fib[i - 1] + fib[i - 2]; // Calculate the next term
+            System.out.print(fib[i] + " ");
+        }
+        
+    }
+
+ 
+}
+
+ */
+// C:\Users\SUDIP BHATTACHARYA\Desktop\JAVA-DSA\FibonacciSequence.java
+public static void printFibonacciSequence(int a, int b, int n) {
+
+    if (n==0) {// which nth term becomes 0 it stops
+        return;
+    }
+
+    // Base case -> nth term
+    int c = a + b;// 0 + 1 = 1, 1 + 1 = 2, 
+    System.out.println(c);// it printed 1, it printed 2, 
+
+    // 0 1 1 2 3
+    // it’s passing values to the next call. n-1 3, 2, 1
+    printFibonacciSequence(b, c , n-1); // b = a, c = b, n - 1 (3, 2, 1), now b's value is 1 which becomes a and c's value is 2 which becomes b so addition will be 3
+    // The first argument b becomes the new a in the next call.
+    // The second argument c becomes the new b in the next call.
+
 }
 
 }
