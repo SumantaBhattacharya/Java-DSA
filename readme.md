@@ -434,7 +434,45 @@ continues till the end of the data set.
 ---
 
 ## 2️⃣ Richest Customer Wealth  
-**Problem:** [Richest Customer Wealth](https://leetcode.com/problems/richest-customer-wealth/)  
+**Problem:** [Richest Customer Wealth](https://leetcode.com/problems/richest-customer-wealth/) 
+
+
+
+---
+
+### 1️⃣ What is $X^n$?
+
+It just means **multiply X by itself n times**.
+
+Example:
+
+$$
+2^4 = 2 \times 2 \times 2 \times 2 = 16
+$$
+
+So “X to the power of n” just multiplies X n times.
+
+---
+
+### 2️⃣ Recursive idea (breaking it into small steps)
+
+Instead of multiplying 2 × 2 × 2 × 2 all at once, think **step by step**:
+
+* Step 1: I know $2^4 = 2 \times 2^3$
+* Step 2: $2^3 = 2 \times 2^2$
+* Step 3: $2^2 = 2 \times 2^1$
+* Step 4: $2^1 = 2 \times 2^0$
+* Step 5: $2^0 = 1$ (we always stop here, this is called the **base case**)
+
+Then we **multiply backwards**:
+
+* Step 4: $2^1 = 2 \times 1 = 2$
+* Step 3: $2^2 = 2 \times 2 = 4$
+* Step 2: $2^3 = 2 \times 4 = 8$
+* Step 1: $2^4 = 2 \times 8 = 16$
+
+---
+
 
 `Blob URLs are temporary and only work within your current browser session.`
 
@@ -446,3 +484,4 @@ continues till the end of the data set.
 
 <!-- 
 ![Sumanta Bhattacharya's Certificate](https://files.oaiusercontent.com/file-XseJoMyVnsgZGNgLKVnidd?se=2025-03-17T15%3A57%3A29Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D299%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3DSUMANTA%2520BHATTACHARYA.png&sig=frWBZHqTDuXZEHPP7hxhueGPPMYqYtVchpbH%2B4U/y0c%3D) -->
+
