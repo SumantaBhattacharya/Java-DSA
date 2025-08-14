@@ -78,7 +78,9 @@ public class Recursion {
         
         // Print Fibonacci Series
         printFibonacciSequence(0, num, n-2);// 0, 1, 5-2 = 3, so we need to print 3 terms of fibonacci series
-                                        
+             
+        int ans = calcPower(2, n);// 2, 5
+        System.out.println("calcPower " + ans);// 2^5 = 32
     }
         
     // methods 
@@ -378,7 +380,112 @@ public static void printFibonacciSequence(int a, int b, int n) {
     // The first argument b becomes the new a in the next call.
     // The second argument c becomes the new b in the next call.
 
+
+    // to calculate the stack height is n-2 + 1 (+1 is the height)
+    // n-2 is the number of recursive calls after the first two numbers, +1 adds the initial call’s frame
+    // Stack height is measured as the maximum number of active function calls on the call stack at any moment.
+
 }
+
+// Print 𝑋^𝑛 (stack height = n)
+// X^n = X * X * X * X.......nth times
+// Given X's value and nth term
+// calculate X^n-1 to calculate stack height
+// X * X^n-1 = X ^ n-1+1 = X^n 
+// base case 
+// ---------
+// x^0 = 1
+// X = 0 ➡ 0
+// ---------
+
+// X^n = = X * X^n−1
+// X ^ n−1 so we get the base condition X^0 =1 first. You keep asking until you hit 𝑋^0 . That’s your foundation, your base.
+
+public static int calcPower(int x, int n) {
+
+    //base case 1 
+    if (n == 0) {// anything^0 = 1
+        return 1;// its not stopping its just returning 1
+    }
+
+    // base case 2
+    if (x == 0) {//  0^anything = 0
+        return 0;
+    }
+
+    
+    
+    // calcPower(x, n-1) calculates x^(n-1) first.
+
+
+
+    // x is 2 and n is 5 getiing minus by 1 until it reach to the base condition
+    // the two values is getting multiplied
+    int xPownm1 = calcPower(x, n-1); //  x^n-1, 2, n-1 = 5,4,3,2,1. This is giving the power by multiplying x and n-1 
+    // x is 2 and n-1 is the power
+    
+    // calcPower(2, 5) → xPownm1 = calcPower(2, 4) → multiply by 2 later
+    // calcPower(2, 4) → xPownm1 = calcPower(2, 3) → multiply by 2 later
+    // calcPower(2, 3) → xPownm1 = calcPower(2, 2) → multiply by 2 later
+    // calcPower(2, 2) → xPownm1 = calcPower(2, 1) → multiply by 2 later
+    // calcPower(2, 1) → xPownm1 = calcPower(2, 0) → multiply by 2 later
+    // calcPower(2, 0) → base case → return 1
+
+    // now we go back
+    /* 
+calcPower(2,1):
+  xPownm1 = calcPower(2,0) = 1
+  xPown = 2 * 1 = 2
+  return 2
+
+calcPower(2,2):
+  xPownm1 = calcPower(2,1) = 2
+  xPown = 2 * 2 = 4
+  return 4
+
+calcPower(2,3):
+  xPownm1 = calcPower(2,2) = 4
+  xPown = 2 * 4 = 8
+  return 8
+
+calcPower(2,4):
+  xPownm1 = calcPower(2,3) = 8
+  xPown = 2 * 8 = 16
+  return 16
+
+calcPower(2,5):
+  xPownm1 = calcPower(2,4) = 16
+  xPown = 2 * 16 = 32
+  return 32
+*/
+
+    // Now we multiply back up the stack:
+
+    // Then we multiply it by x to get x^n.
+    int xPown = x * xPownm1; // X^n, this is giving the 2 value and multiplying with the power 
+
+// Now we multiply back up the stack:
+// calcPower(2, 0) -> 2* 0 = 0
+// calcPower(2, 1) → 2 * 1 = 2
+// calcPower(2, 2) → 2 * 2 = 4
+// calcPower(2, 3) → 2 * 4 = 8
+// calcPower(2, 4) → 2 * 8 = 16
+// calcPower(2, 5) → 2 * 16 = 32
+
+
+// calcPower(2, 0) returns 1 (base case).
+// Then calcPower(2, 1(n-1)) does 2 * calcPower(2, 0) → 2 * 1 = 2.
+// Then calcPower(2, 2) does 2 * calcPower(2, 1) → 2 * 2 = 4.
+// Then calcPower(2, 3) does 2 * calcPower(2, 2) → 2 * 4 = 8.
+// Then calcPower(2, 4) does 2 * calcPower(2, 3) → 2 * 8 = 16.
+// Finally, calcPower(2, 5) does 2 * calcPower(2, 4) → 2 * 16 = 32.
+// So the sequence 1, 2, 4, 8, 16, 32
+
+    return xPown;
+
+}
+
+
 
 }
 
