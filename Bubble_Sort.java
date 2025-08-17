@@ -1,10 +1,18 @@
 public class Bubble_Sort {
 
+    // Bubble sort works by pushing the largest element to the end in each outer loop iteration. Once the last element is in its correct position, there’s no need to compare it again in the next iteration.
+    
+    /* 
+    index:  0   1   2   3   4
+    value: [7,  8,  3,  1,  2]
+    */
+
+
     // smallest to largest element (assending order)
 
     // Ex- 7 8 3 1 2
     // first iterartion
-    // 7 , 8, 3, 1, 2
+    // 7, 8, 3, 1, 2
     // 7, 3, 8, 1, 2
     // 7, 3, 1, 8, 2
     // 7, 3, 1, 2, 8
@@ -58,7 +66,7 @@ public class Bubble_Sort {
 
      public static void  printArray(int arr[]){
          for (int i=0; i < arr.length; i++)
-             System.out.print(arr[i]+" ");
+             System.out.print(arr[i]+" ");//
          System.out.println();
      }
 
@@ -67,11 +75,11 @@ public class Bubble_Sort {
 
         // bubble sort 
         // outer loop for counting n-1 iterations
-        for (int i = 0; i < arr.length - 1 ; i++) {
-            for (int j = 0; j < arr.length - i - 1; j++) {
+        for (int i = 0; i < arr.length - 1 ; i++) {// n-1 becuase we dont want to compare the last element which is already sorted again
+            for (int j = 0; j < arr.length - i - 1; j++) {// Inside each pass, skip the elements at the end that are already sorted from previous passes.
                 if (arr[j] >  arr[j+1]) {
                     // swap
-                    int temp = arr[j];
+                    int temp = arr[j];// i is the index for outer loop and j is an index for inner loop
                     arr[j] = arr[j+1];
                     arr[j+1] = temp; // swapping elements in the array at i and i+1 index positions.
                     
@@ -86,7 +94,39 @@ public class Bubble_Sort {
      }
 
 }
+/* 
+for (int i = 0; i < arr.length - 1 ; i++) {
 
+// 1.) i=0, 0 < 5 - 1 = 4 means 0 < 4 ✔, 
+
+for (int j = 0; j < arr.length - i - 1; j++) {
+
+// 1.1) j=0, 0 < 5 - 0(i) - 1 = 4 means 0(j) < 4 ✔
+// 1.3) j=1, 1 < 4 ✔
+// 1.8) j=2, 2 < 4 ✔
+
+if (arr[j] >  arr[j+1]) {
+
+// 1.2) arr[0] > arr[0+1] = 7 > 8 ❌. so instead, j increments to 1 and the loop checks again. the flow doesnt yet go to the outer loop its still in inner loop. Increment j → j = 1 → inner loop repeats.
+// 1.4) arr[1] > arr[1+1] = 8 > 3 ✔. so, now we need to perform swap  
+// 1.9) arr[2] > arr[2+1] = 
+
+// swap
+
+int temp = arr[j];
+
+// 1.5) temp = arr[1] = 8
+
+arr[j] = arr[j+1];
+// 1.6) arr[1] = arr[1 + 1] means postion 2(saying 0 and 1) where 8 is, that position is assigned to arr[2] where 3 exists meaning on the second position index 1 there comes 3 
+
+arr[j+1] = temp;
+// 1.7) arr[1 + 1] = 8 means, in position 3(2 = 0,1,2) where 3 exists is value is now 8
+                    
+                }
+            }
+        }
+*/
 /*
  * 
  * Lec-46: BUBBLE SORT in PYTHON(DSA in PYTHON) with Code
