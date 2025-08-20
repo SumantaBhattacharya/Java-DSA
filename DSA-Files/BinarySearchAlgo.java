@@ -47,7 +47,7 @@ public class BinarySearchAlgo {
             }
         }
 
-        return -1;
+        return -1;//  it will return -1 if element is not found so will it return -1 after enetering the loop and no element is found right or if the condioton is not matched return -1
 
     }
 
