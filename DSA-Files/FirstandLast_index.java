@@ -3,11 +3,11 @@ import java.util.Arrays;
 class FirstandLast_index {
 
     public static void main(String[] args) {
-        int[] nums = {
+        int[] nums = {// sorted array
                 5, 7, 7, 7, 8, 8, 10
         };
 
-        int target = 8;
+        int target = 7;
 
         int[] result = searchRange(nums, target);
         // System.out.println(result);
@@ -27,7 +27,7 @@ class FirstandLast_index {
             if (target > arr[mid]) {
                 start = mid + 1;
             } else if (target < arr[mid]) {
-                end = end - 1;
+                end = mid - 1;
             } else {
                 // return mid;
 

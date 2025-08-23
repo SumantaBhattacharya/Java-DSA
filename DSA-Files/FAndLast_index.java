@@ -1,6 +1,7 @@
 public class FAndLast_index {
 
     public static void main(String[] args) {
+        // sorted array
         int[] nums = {5, 7, 7, 7, 8, 8, 10};
         int target = 7;
 
