@@ -23,13 +23,14 @@ public class FindE_InfiniteArray {
         int start = 0;
         int end = 1; // box of size two
 
-        // condition for the target to lie in the range
-        // target should be less than end
+        /* 
+        condition for the target to lie in the range
+        target should be less than end
 
-        // if the target is greater than end that means target is greater than start
-        // till your target is greater than end keep doubling
-        // when you target element is not greater than end it basically means the target
-        // element lies behind end
+        if the target is greater than end that means target is greater than start
+        till your target is greater than end keep doubling
+        when you target element is not greater than end it basically means the target
+        element lies behind end*/
 
         while (target > arr[end]) {
             // We’re trying to find a range so end is not the last index value it is part of the last element of the array thats why we are considering assigning it to index 1 to end as above coded

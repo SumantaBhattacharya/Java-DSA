@@ -1,4 +1,4 @@
-public class FindElInfiniteArray {
+public class FindEl_InfiniteArray {
 
     // https://www.geeksforgeeks.org/dsa/find-position-element-sorted-array-infinite-numbers/
     public static void main(String[] args) {
@@ -24,8 +24,8 @@ public class FindElInfiniteArray {
              // initially the size of the box will be 2 start start was 0th index means 1 index and end was 1st index means second element
              // newEnd = previous End + sizeofbox * 2 
              // (end - start + 1) is the formula for calculating the size of the box as initially 1-0+1 = 2
-                 end = end + (end - start + 1) * 2;// +1 is for searching from the next element in the next chunk or part of the existing/original array
-                 start = newStart;
+             end = end + (end - start + 1) * 2;// +1 is for searching from the next element in the next chunk or part of the existing/original array
+             start = newStart;
         /*
          (end - start + 1) = the current window size.
          Multiply by 2 → you’re saying “make the next window twice as large as the current window”.
