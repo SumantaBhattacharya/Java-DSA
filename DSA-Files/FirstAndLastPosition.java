@@ -1,6 +1,6 @@
 public class FirstAndLastPosition {
     
-    
+    // https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
     public static void main(String[] args) {
 
         int[] nums = {5, 7, 7, 7, 8, 8, 10};
@@ -72,6 +72,6 @@ public class FirstAndLastPosition {
 
         // if start is the grater element and end is the lower element so the mid is the target element
         return ans; // after the search ans is getting returned after loop. if the while loop is not executed even once then ans will be -1 as initialized
-    }
+    }// here ans is getting updated after it each turn
 
 }

@@ -1,5 +1,6 @@
 public class FirstAndLast_Position {// DSA-File
     
+   // https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
     public static void main(String[] args) {
         
         int[] nums = {// sorted array
@@ -20,9 +21,7 @@ public class FirstAndLast_Position {// DSA-File
         int first_index = -1;
         int last_index = -1;
 
-        int [] ans ={-1,
-                      -1,
-                    };
+        int [] ans ={-1,-1,};
 
        for (int i = 0; i < arr.length; i++) {
           if (target == arr[i]) {
