@@ -46,7 +46,7 @@ public class Peak_Index {
          */
 
         int[] arr = {
-                // 0 1 2 3   4 5
+            //  0  1  2   3  4  5
                 0, 1, 2, 10, 5, 2,
         };
 
@@ -70,7 +70,8 @@ public class Peak_Index {
          * “infinite array” searching.
          */
 
-        while (start < end) {
+        //  start <= end ➡ arr[mid+1] tries to access an index beyond the array
+        while (start < end) {// When start == end, we've found the peak
 
            int mid = start + (end - start) / 2;
 
