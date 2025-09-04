@@ -62,7 +62,7 @@ public class leetcode1 {
 
     }
 
-    // find number of numbers that have even number of digits
+    // find number of numbers that have even number of digits using linear search
     public static int findNumbers_withEvenNumber_ofDigits(int[] nums) {
 
         int count = 0; // we are counting the even digits of numbers
