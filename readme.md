@@ -431,6 +431,14 @@ continues till the end of the data set.
 
 [![Sorting in Java | Bubble Sort, Selection Sort & Insertion Sort | Java Placement Course](https://img.youtube.com/vi/PkJIc5tBRUE/0.jpg)](https://youtu.be/PkJIc5tBRUE?si=q7739lM_AuYX8c3h)
 
+# ***Selection Sort Algorithm – Theory + Code***
+
+[![Selection Sort Algorithm – Theory + Code](https://img.youtube.com/vi/Nd4SCCIHFWk/0.jpg)](https://youtu.be/Nd4SCCIHFWk?si=yAelZoDuoWfKZ1w5)
+
+# ***Insertion Sort Algorithm – Theory + Code***
+
+[![Insertion Sort Algorithm – Theory + Code](https://img.youtube.com/vi/By_5-RRqVeE/0.jpg)](https://youtu.be/By_5-RRqVeE?si=kqciLPjfR-sm9Tvy)
+
 `Leetcode solved problems`
 ## 1️⃣ Find Numbers with Even Number of Digits  
 **Problem:** [Find Numbers with Even Number of Digits](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/)  
