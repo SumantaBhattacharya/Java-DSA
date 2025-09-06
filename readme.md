@@ -427,6 +427,10 @@ continues till the end of the data set.
   - Even Digits (with Optimized Solution)  
   - Max Wealth  
 
+# ***Sorting in Java | Bubble Sort, Selection Sort & Insertion Sort | Java Placement Course***
+
+[![Sorting in Java | Bubble Sort, Selection Sort & Insertion Sort | Java Placement Course](https://img.youtube.com/vi/PkJIc5tBRUE/0.jpg)](https://youtu.be/PkJIc5tBRUE?si=q7739lM_AuYX8c3h)
+
 `Leetcode solved problems`
 ## 1️⃣ Find Numbers with Even Number of Digits  
 **Problem:** [Find Numbers with Even Number of Digits](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/)  
