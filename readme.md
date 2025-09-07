@@ -448,7 +448,15 @@ continues till the end of the data set.
 ## 2️⃣ Richest Customer Wealth  
 **Problem:** [Richest Customer Wealth](https://leetcode.com/problems/richest-customer-wealth/) 
 
+---
 
+## Find First and Last Position of Element in Sorted Array
+**Problem:** [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) 
+
+---
+
+## Find Smallest Letter Greater Than Target
+**Problem:** [Find Smallest Letter Greater Than Target](https://github.com/SumantaBhattacharya/Java-DSA/blob/main/DSA-Files/nextGreatestLetterThanTarget.java) 
 
 ---
 
