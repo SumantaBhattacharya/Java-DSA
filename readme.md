@@ -439,7 +439,11 @@ continues till the end of the data set.
 
 [![Insertion Sort Algorithm – Theory + Code](https://img.youtube.com/vi/By_5-RRqVeE/0.jpg)](https://youtu.be/By_5-RRqVeE?si=kqciLPjfR-sm9Tvy)
 
-`Leetcode solved problems`
+# ***Recap and Binary Search using recursion***
+
+[![Introduction to Recursion](https://img.youtube.com/vi/M2uO2nMT0Bk/0.jpg)](https://youtu.be/M2uO2nMT0Bk?si=DFNj7naSE_wd4gNV)
+
+## `Leetcode solved problems`
 ## 1️⃣ Find Numbers with Even Number of Digits  
 **Problem:** [Find Numbers with Even Number of Digits](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/)  
 

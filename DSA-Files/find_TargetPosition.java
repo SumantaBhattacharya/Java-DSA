@@ -3,7 +3,7 @@ public class find_TargetPosition {
     // https://www.geeksforgeeks.org/dsa/find-position-element-sorted-array-infinite-numbers/
     public static void main(String[] args) {
 
-            //        0  1   2   3  4   5
+            //         0  1   2   3  4   5
         int [] arr = {68,69,180,440,480,781 }; // assuming this is a sorted infinite array of n elements init
 
         int target = 440; // element to be searched
@@ -14,8 +14,7 @@ public class find_TargetPosition {
      
         System.out.println("Element " + arr[result] + " found at index: " + result);
  
-        
-
+    
     }
 
     public static int searchRange(int[] arr, int target) {

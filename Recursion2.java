@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Recursion2 {// main function is the first function that will go into the stack and the last function come out of the the stack, any function that is currently running will go into the stack memory, primitives are also stored in the stack memory, stack follows the policy of last in, first out
     public static void main(String[] args) {// main function is the first function that gets called, all the function calls that happen in a programming language that go into the stack memory
 
@@ -16,6 +18,27 @@ public class Recursion2 {// main function is the first function that will go int
 
         int result = fiboIterative(4);
         System.out.println("fiboIterative: " + result);
+
+
+        int[] array = {68, 69, 440, 480};
+        Scanner sc = new Scanner(System.in);
+
+
+        System.out.print("[");
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i]);
+            if (i < array.length - 1) {
+                System.out.print(", "); 
+            }
+        }
+        System.out.println("]");
+
+
+        System.out.print("Enter target to search: ");
+        int target = sc.nextInt();
+
+        int BinaryRecursiveSearch_result = BinaryRecursiveSearch(array, target, 0, array.length - 1);
+        System.out.println("'BinaryRecursiveSearch' of " + target + " --> index: " + BinaryRecursiveSearch_result);
 
     }
 
@@ -79,6 +102,26 @@ public class Recursion2 {// main function is the first function that will go int
 
     }
 
+    static int BinaryRecursiveSearch(int [] arr, int target, int start, int end){
+
+        if(start > end){
+            return -1; // as start cannot be ever greater than end
+        }
+
+        int mid = start + (end - start) / 2; // the start and end is for the dynamic devision of the array
+
+        if (target > arr[mid]) {
+            // start = mid + 1;
+            return BinaryRecursiveSearch(arr, target, start = mid + 1, end);// array, target, end will not change
+            // instead of this start = mid + 1, end we could have directly mid + 1 functionally, will be the same
+        }else if (target < arr[mid]){
+            // end = mid - 1;
+            return BinaryRecursiveSearch(arr, target, start, end = mid - 1); // whenever you are any recursion call, make sure you are returning it(the result of a function call of the return type) if there is a return type
+        }else{ // target == arr[mid]
+            return mid;
+        }
+
+    }
     
 }
 
