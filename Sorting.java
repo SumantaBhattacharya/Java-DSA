@@ -65,7 +65,6 @@ public class Sorting {
     }
 
     private static int[] Selection_Sort(int[] arr) {
-        // TODO Auto-generated method stub
 
         for (int i = 0; i < arr.length - 1; i++) {// nth times
 

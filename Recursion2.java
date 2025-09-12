@@ -40,6 +40,7 @@ public class Recursion2 {// main function is the first function that will go int
         int BinaryRecursiveSearch_result = BinaryRecursiveSearch(array, target, 0, array.length - 1);
         System.out.println("'BinaryRecursiveSearch' of " + target + " --> index: " + BinaryRecursiveSearch_result);
 
+        sc.close();
     }
 
 

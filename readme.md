@@ -427,6 +427,13 @@ continues till the end of the data set.
   - Even Digits (with Optimized Solution)  
   - Max Wealth  
 
+[![Binary Search Algorithm - Theory + Code](https://img.youtube.com/vi/f6UU7V3szVw/0.jpg)](https://youtu.be/f6UU7V3szVw?si=9u4aYPpXHmS5hW_V)
+
+  
+**Topics Covered:** 
+- binary search
+- Agnostic Binary Search
+
 # ***Sorting in Java | Bubble Sort, Selection Sort & Insertion Sort | Java Placement Course***
 
 [![Sorting in Java | Bubble Sort, Selection Sort & Insertion Sort | Java Placement Course](https://img.youtube.com/vi/PkJIc5tBRUE/0.jpg)](https://youtu.be/PkJIc5tBRUE?si=q7739lM_AuYX8c3h)
@@ -442,6 +449,9 @@ continues till the end of the data set.
 # ***Recap and Binary Search using recursion***
 
 [![Introduction to Recursion](https://img.youtube.com/vi/M2uO2nMT0Bk/0.jpg)](https://youtu.be/M2uO2nMT0Bk?si=DFNj7naSE_wd4gNV)
+
+ ![LvsB](LvsB.png)
+ ![LvsBinary](LvsBinary.png)
 
 ## `Leetcode solved problems`
 ## 1️⃣ Find Numbers with Even Number of Digits  

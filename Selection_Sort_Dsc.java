@@ -22,9 +22,6 @@ public class Selection_Sort_Dsc {
     }
 
     private static int[] Selection_Sort(int[] arr) {
-        // TODO Auto-generated method stub
-        // throw new UnsupportedOperationException("Unimplemented method 'Selection_Sort'");
-
         for (int i = 0; i < arr.length - 1; i++) {
             
             int smallestIndex = i;
