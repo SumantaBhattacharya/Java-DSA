@@ -39,6 +39,113 @@ Call: fibo(0) n = 0 → less than 2 → return 0 once it react here then the fun
 }
 
 /*
+ if we give input 50 this will result in exponensial time complexity because the recursion tree is re-evaluating the same things over and over again. Refer to C:\Users\SUDIP BHATTACHARYA\Desktop\JAVA-DSA\FibonacciSequence\81a23854-fd88-4fac-b60b-82eb513a0bdf.jpg 
+ Time Complexity - i. time complexity is not equal to time taken to run a program. i.i. in a faster machine the slope of the graph is reduced even though the time taken is different but the relationship between the size and the time is same, in both the cases, the time will grow linearly i.ii. time complexity is a function that tells us how the time is going to grow as the input grows (is actually a function that gives us the relationship about how the time wil grow as the input grows). actual time taken is differ from machine to machine
+ constant will take O(1) linear, linear search will take O(n), binary search will take O(log(n)). Even though the value of actual time is different they are all growing linearly.
+ when the array is starting constant will takes the most amount of time then O(log n) then O(n). 
+ considerable things about complexity 
+ i. Always look for worst-case complexity. 
+ ii. Always look at complexity for large data. 
+ iii. Always know time wil grow as the input grows. 
+ iv. we ignore all constants (less dominating terms) in time complexity.
+ 
+ O(3 N^3 + 4 N^2 + 5 N + 6)
+ O(N^3 +N^2 +N) iv.(remove the constants)
+ O(N^3)          v.(remove the less dominating terms)
+
+ Big O notation - describes the upper bound of the growth rate of a function. 
+ O(N^3) - Upper bound means the size of the array will grow as the input grows in a n cube passion
+
+ mathametical representation - (O(f(N))/O(g(N)) is understood as the set of functions that are bounded above by f(N)/g(N) in the limit as N→∞)
+ f(n) = o(g(n))
+
+ limits 
+ N -> ∞ ➡ f(n)/g(n) < ∞
+
+ O(N^3) = O(3 N^3 + 4 N^2 + 5 N + 6)
+ f(n)            o(g(n))
+
+ limit (when the value of n reaches close to infinity)
+ N -> ∞            O(3 N^3 + 4 N^2 + 5 N + 6) /  O(N^3) = 
+
+ O(3 N^3 + 4 N^2 + 5 N + 6) is equivalent to O(N^3)
+
+ Therefore, the expression becomes:
+     O(N^3) / O(N^3)
+     O(N^3) / O(N^3)= O(1).
+
+ O(N^3) = O(6 N^3 + 3 N + 5)
+ g(N)  =    f(N)
+
+  limit
+ N -> ∞           (6 N^3 + 3 N + 5)
+ N -> ∞           (6 + 3/N^2 + 5/N^3)
+ N -> ∞           6 + 3/∞ + 5/∞ (anything devided by infinity is equal to 0)
+ N -> ∞           6 + 0 + 0 
+ N -> ∞           6 is the upper bound(our algorithm will never exceed the complexity of this)
+
+ f(n)/g(n) < ∞
+ 6 < ∞
+
+ But when we use Big 0 notation
+
+ limit
+ N -> ∞           O(6 N^3 + 3 N + 5)
+ N -> ∞           O(N^3 + N )
+ N -> ∞           O(N^3)
+
+ O(N^3) / O(N^3) = O(1).
+
+ O(n^2)
+--------
+
+ n = 4
+
+ function sqaure(n){  
+   for(int i = 0; i < n; i++){ // each side will be same length  
+    for(int j = 0; j < n; i++){ // j will execute 4 times in 4 (0, 1, 2, 3) rows and 4 (0, 1, 2, 3) columns
+      System.out.println("i: " + i + "and" + "j " + j); // exch time, j will execute till 4 then i will be incremented the j will execute again this loop will continue until i runs running.
+    }// forming a matrix we can look at i as columns and j as rows. "row" is line horijontally and "column" is a line vertically
+   }// Area of square = Side length × side length that going to equal number of cells within this matrix that also happens to be the number of times that we have to perform this code. 4 * 4 is 4^2 = 16 cells O(N^2)
+ }
+
+ O(N cubed) or O(N^3)
+ -------------------
+
+ n = 4
+
+ function cube(n) {
+    for(int i = 0; i < n; i++){ // for every iteration of this for loop is going to iterate through the entirity of its inner for loop 
+        for(int j = 0; j < n; i++){ // and for every iteration of this for loop will need to iterate though the entirity of inner for loop
+            for(int k = 0; k < n; i++){ 
+                System.out.println("i: " + i + "and" + "j: " + j + "k: " + k);
+            }// i. first the inner most for loop for run 4 times then j will be incremented by 1 then the inner most loop will run again and this cycle will happen until the j becomes 4 the k will execute till Jth 0th iteration j will run 4 time 1th iteration k will run 4 times like this 4 + 4 + 4 + 4 this will result an 4*4 matrix
+        }
+    }
+ }
+
+ Big omega notation 
+ its actually opposite of big O notation
+ lower bound
+
+ if an algorithm has a complexity of O(N^3) this means it will take atleast N^3 time complexity. it call also take N^4, N^3(Log N) but it will never be less N^3
+
+ limit
+ N ➡ ∞         f(n)/g(n) > 0
+
+ what if an alogorithm has upper bound and lower bound as N^2
+ Theta notation denotes tight bound
+ what this means is that an algorith has worst time complexity and best time complexity O(N^2) means atleast and atmost O(N^2)
+ meaning time complexity tightly bounded N^2 that is O(N^2)
+ Bubble sort takes O(N^2) in both best and worst time complexity
+ when worst and best case matches it refer to as quadratic
+ example if your minimum (refer as lower bound) and maximum (refer as upper bound) salary is 50k that means you salary is exactly is 50k
+
+ point to be noted is best case cannot be greater than worst case either it can be less or equal 
+
+ */
+
+/*
 
 Fibonacci number                  Devided by one before                    Ratio
 
