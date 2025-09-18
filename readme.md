@@ -413,6 +413,8 @@ continues till the end of the data set.
 
 [![Linear Search Algorithm](https://img.youtube.com/vi/_HRA37X8N_Q/maxresdefault.jpg)](https://youtu.be/_HRA37X8N_Q?si=ynbNCRnQtTCauUK8)  
 
+![alt text](image-2.png)
+
 **Video:** [Watch here](https://youtu.be/_HRA37X8N_Q?si=ynbNCRnQtTCauUK8)  
 
 ## Topics Covered:  
@@ -452,6 +454,9 @@ continues till the end of the data set.
 
  ![LvsB](LvsB.png)
  ![LvsBinary](LvsBinary.png)
+ ![alt text](image-3.png)
+ ![alt text](image-4.png)
+ <!-- ![alt text](image.png) -->
 
 ## `Leetcode solved problems`
 ## 1️⃣ Find Numbers with Even Number of Digits  
