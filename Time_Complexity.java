@@ -139,6 +139,152 @@ Best Case Complexity - O(1)
 Average Case Complexity - O(1)
 Worst Case Complexity - O(1)
 
+Time Complexity != time taken by the algorithm to execute.
+Time Complexity measures how the number of steps an algorithm performs scales with the size of the input 
+
+Big O - worst case - the number of steps it can almost take.
+
+O(n) = linear  = (y = x)
+O(5n^3 + 2n^2 + 52) - O(n^3 + n^2) - O(n^3)
+
+Common complexities
+i. O(1) Constant
+ii. O(n) linear
+iii. O(n^2) Quardratic
+
+function sqaure(n){  
+   for(int i = 0; i < n; i++){
+    for(int j = 0; j < n; j++){
+      console.log("sqaure: ", "i: " , i , " and" , " j " , j); 
+    }
+   }
+ }
+
+ Time Complexity is O(n^2)
+
+ function cube(n) {// as the number increases the number of operation increases too
+    for(int i = 0; i < n; i++){ 
+      for(int j = 0; j < n; j++){ 
+            for(int k = 0; k < n; k++){ 
+                System.out.print("cube: " + "i: " + i + " and" + " j: " + j + " k: " + k);
+            }
+        }
+    }
+ }
+
+
+Time complexity - O(n^3)
+
+iv. O(log n)
+
+log base 2 of 8? = 3
+2^? = 8
+
+O(log n) > O(n)
+
+function logFunc(n, count = 0) {
+   if(n === 0){
+    return "Done"
+  }else{
+    count++;
+    n = Math.floor(n/2);
+    return logFunc(n, count);// 8/2 = 4, 4/2 = 2, 2/2 = 0, 0===0 ✔ Done
+  }
+}
+
+O(log n) iterative/non recursive
+
+function logn(n) {
+  int count = 0;
+  while (n > 1) {// When n becomes 1, Math.floor(1/2) = 0 > 1 ✖
+    n = Math.floor(n/2)// 8/2 = 4/2 = 2/2 = 1/2 = 0 > 1 ✖
+    count++;
+  }
+  return count;
+}
+
+Binary Search & O(log n) - Any algorithm that repeatedly divides the input size by a constant factor (like 2) has O(log n) time complexity. devided half infinitely
+
+function IterativeBinaryS(arr, target) {
+  
+  int start = 0;
+  int end = arr.length - 1;
+
+  while (start <= end) {
+    int mid = Math.floor(start + (end - start) / 2)
+  
+    if (target > arr[mid]) {
+      start = mid +1
+    }else if(target < arr[mid]){
+      end = mid - 1;
+    }else{
+      return mid;
+    }
+
+    return -1;
+
+  }
+
+}
+
+
+function RecursiveBinarySearch(arr, target, start = 0, end = arr.length - 1) {
+  
+  // base condition
+  if (start > end) {
+    return -1;
+  }
+
+  int mid = Math.floor(start + (end - start) / 2)
+
+  if (target > arr[mid]) {
+    return RecursiveBinarySearch(arr, target, start = mid + 1, end)
+  }else if(target < arr[mid]){
+    return RecursiveBinarySearch(arr, target, start, end = mid - 1)
+  }else{
+    return mid;
+  }
+
+}
+
+Time Complexity is O(n)
+
+O(n log n) 
+
+O(n log n) > O(n^2)
+
+e,g. Sorting - Merge Sort
+
+O(2^n) 
+
+Exponential time complexity
+e,g. Recursion - i. Fibonacci - i.ii. two branchches
+
+like O(3^n), O(4^n) all the exponensial time complexity
+
+public static int fibo(int n) {
+        if (n < 2) {
+            return n; 
+        } else {
+            return fibo(n - 1) + fibo(n - 2); // 3, 2, 1
+        }
+}
+
+1s - 10^8 operations
+
+n > 10^8 - O(log n), O(1)
+n <= 10^8 - O(n)
+n <= 10^6 - O(n log n), if n is greater 10^4 then O(n^2) will not be acceptable
+n <= 10^4 - O(n^2),  10^4*2 = 10^8 means O(n^2) is acceptable, 
+n <= 500 - O(n^3)
+n <= 25 - O(2^n), exponential time complexity - brute force recursion solution
+n <= 12 - O(n!), it exceeds 10^8 operations
+
+https://leetcode.com/problems/maximum-profit-in-job-scheduling/description/
+
+n < 5 * 10^4 - O(n log n), sorting, greedy
+
+Big Ω - best case - the number of steps it can atleast take.
 */
 
 /*
