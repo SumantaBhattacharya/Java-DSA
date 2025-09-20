@@ -514,6 +514,11 @@ O(n!)             |     Factorial
 
 > *Big O notation - describes the upper bound of the growth rate of a function. Basically, means is it always take the worst case time complexity*
 
+# Time Complexity for Coding Interviews | Big O Notation Explained | Data Structures & Algorithms
+
+[![Time Complexity for Coding Interviews | Big O Notation Explained | Data Structures & Algorithms](https://i.ytimg.com/vi/5T0SiJocPCI/hqdefault.jpg)](https://youtu.be/5T0SiJocPCI)
+
+
 ## `Leetcode solved problems`
 ## 1️⃣ Find Numbers with Even Number of Digits  
 **Problem:** [Find Numbers with Even Number of Digits](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/)  
