@@ -12,7 +12,7 @@ public class FibonacciSequence {
         int fibonacci = fibo(n);
         System.out.println(fibonacci);
 
-    }
+    };
 
     public static int fibo(int n) {
 
@@ -23,14 +23,104 @@ public class FibonacciSequence {
         } else {// the else part gets executed first 3
 
             // here the function is getting called twice
-            return fibo(n - 1) + fibo(n - 2); // 3, 2, 1
+            return fibo(n - 1) + fibo(n - 2); // 4 → 4-1 + 4-2, i. 3 → 3-1 + 3-2 , i.i. 2-1 + 2-2 ii. 2-1 + 2-2
 
-        }
+        }// Space Complexity (height/path of the tree) - O(n) - Recursive programs do not have constant time complexity O(1) because in recursion, functions call's stored(take some memory) in stack
 
-    }
+    };
 /*
-Call: fibo(4) n = 4 → not less than 2 → else part will execute → return fibo(3) + fibo(2) → fibo(3) = 2 and fibo(2) = 1 so 2 + 1 = 3
-Call: fibo(3) n = 3 → not less than 2 → else part will execute → return fibo(2) + fibo(1) → fibo(2) = 1 and fibo(1) = 1 so 1 + 1 = 2
+                    fibo(4)i
+          /                       \
+       fibo(3)ii                fibo(2)vii. in this case when function call number 7 is executing 2, 3, 6, 4 and 5 are have already finished because these are not linked with function call number 7
+      /        \                  /    \
+  fibo(2)iii  fibo(1)vi. fibo(1)viii. fibo(0)ix.  in this level of recursion tree, no function call can be in the stack at the same time. in any perticular time no two function call at the same time, in the same level of recursion will be in the stack at the same time. baiscally no two function calls will be in the stack at the same time. Only calls that are interlinked with each other will be in the stacked at the same time.
+ /         \
+fibo(1)iv. fibo(0)v.
+
+/*
+ 
+i. linear Recurrences                ii. Devide and Conquer Recurrences
+F(N) = F(N-1) + F(N-2)       ii.i Binary Search F(N) = F(N/2) + O(1) 
+                                                searching in the array of size n = (search in the array of size N/2) + (constant time complexity)
+*/
+/*Master Theorem
+--------------
+
+T(n) = a T(n/b) + F(N)
+
+Where, a >= 1 , b > 1
+
+e.g., T(n) = T(n-1) + 1 Master Theorem is not applicable in this program because a = 1 which is equal to 1 ✔ and b = 1 whioch is not greater than 1 ✖ 
+
+Solution is T(n) = n^log base b of a [u(n)]
+
+u(n) depends on h(n) 
+
+h(n) = f(n)/n^log base b of a 
+
+if h(n)            │ u(n)
+--------------------------
+n^r, r > 0         │ O(n^r)
+--------------------------
+n^r, r < 0         │ O(1)
+--------------------------
+(log n)^i, i >= 0  │ (log base 2 of n)^i+1 / i+1
+--------------------------------------------------
+
+f(n) = a T(n/b) + f(n)
+
+f(n) = 8 T (n/2) + n^2
+
+a = 8 >= 1 ✔ , b = 2 > 1 ✔
+
+T(n) = n^log base b of a [u(n)]
+
+n^log base 2 of 8 [u(n)] = n^3 [u(n)]
+
+[u(n)] depends on h(n)
+
+h(n) = f(n)/n^log base b of a = n2/n^3 = 1/n = n^-1
+
+n^r, r > 0, n^-1, -1 > 0 ✖
+n^r, r < 0 , n^-1, -1 < 0 ✔ = n^3 [O(1)] =  n^3 * O(1) = n^3.1 = n^3
+
+
+ */
+
+/*
+ii. Devide and Conquer Recurrences
+-----------------------------------
+
+T(n) = a1 T( b1 n + ∑1 (n) ) + a2 T (b2 n + ∑2 (n)) + ....... + a of k T (b of k * ∑k(n)) + g(n)
+for n >= x0
+a1 = 1 , b1 = 1/2, ∑1 (n) = 0 and g(x) = c (constant)
+T(n) = 9 T(N/3) + 4/3 T(5/6 n) + 4 N^3
+      a1  b1       a2  b2         g(n)
+      
+
+
+*/
+ /* 
+fibo(4)
+ ├── fibo(3)
+ │    ├── fibo(2)
+ │    │    ├── fibo(1) = 1
+ │    │    └── fibo(0) = 0
+ │    │        → fibo(2) = 1 + 0 = 1
+ │    └── fibo(1) = 1
+ │         → fibo(3) = 1 + 1 = 2
+ └── fibo(2)
+      ├── fibo(1) = 1
+      └── fibo(0) = 0
+           → fibo(2) = 1 + 0 = 1
+
+→ fibo(4) = fibo(3) + fibo(2) = 2 + 1 = 3
+
+*/
+
+/*
+Call: fibo(4) n = 4 → not less than 2 → else part will execute → return fibo(3) + fibo(2) → fibo(3) (fibo(2) + fibo(1) → fibo(2) = fibo(1) + fibo(0) = 1 + 0 = 1 and fibo(1) = 1) = 2 and fibo(2) = 1 so, 2 + 1 = 3
+Call: fibo(3) n = 3 → not less than 2 → else part will execute → return fibo(2) + fibo(1) → fibo(2) (fibo(1) + fibo(0)) = 1 and fibo(1) = 1 so 1 + 1 = 2
 Call: fibo(2) n = 2 → not less than 2 → else part will execute → return fibo(1) + fibo(0) → fibo(1) = 1 and fibo(0) = 0 so 1 + 0 = 1
 Call: fibo(1) n = 1 → less than 2 → return 1 
 Call: fibo(0) n = 0 → less than 2 → return 0 once it react here then the function will start getting execute and get removed from the stack one by one last in first out
@@ -203,9 +293,7 @@ O(kt) * (n-i)/k = O(t(n-i)) - k get's cancelled = O(n) (ignoring the constants a
 xk <= n-i
 x = (n-i)/k (number of times the outer loop is running)
 
-
-
-    */
+*/
 
 /*
 
