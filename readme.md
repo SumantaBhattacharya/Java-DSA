@@ -1,26 +1,25 @@
 # ***If you don't sacrifice for what you want, what you want becomes the sacrifice***
 <!-- Basics of Time Complexity and Space Complexity | Java | Complete Placement Course | Lecture 9 -->
 
-![alt text](images/image-9.png)
-![alt text](images/image-10.png)
+<!-- ![alt text](images/image-9.png) -->
+<!-- ![alt text](images/image-10.png) -->
 <!-- ![alt text](images/image-11.png) -->
-![alt text](images/image-12.png)
-![alt text](images/image-13.png)
-![alt text](images/image-14.png)
-![alt text](images/image-15.png)
+<!-- ![alt text](images/image-12.png) -->
+<!-- ![alt text](images/image-13.png) -->
+<!-- ![alt text](images/image-14.png) -->
+<!-- ![alt text](images/image-15.png) -->
+<!-- ![alt text](images/image.png) -->
+<!-- ![alt text](images/image-1.png) -->
+<!-- ![alt text](images/image-2.png) -->
+<!-- ![alt text](images/image-3.png) -->
+<!-- ![alt text](images/image-4.png) -->
+<!-- ![alt text](images/image-5.png) -->
+<!-- ![alt text](images/image-6.png) -->
+<!-- ![alt text](images/image-7.png) -->
+<!-- ![alt text](images/image-8.png) -->
 
-![alt text](images/image.png)
-![alt text](images/image-1.png)
-![alt text](images/image-2.png)
-![alt text](images/image-3.png)
-![alt text](images/image-4.png)
-![alt text](images/image-5.png)
-![alt text](images/image-6.png)
-![alt text](images/image-7.png)
-![alt text](images/image-8.png)
 
-
-# Array vs ArrayList in Java
+## Array vs ArrayList in Java
 [Source: GeeksforGeeks](https://www.geeksforgeeks.org/array-vs-arraylist-in-java/)
 
 | **Aspect**                | **Array** | **ArrayList** |
@@ -33,7 +32,7 @@
 | **Primitive Data Storage** | Stores primitive data types directly (e.g., `int`, `double`) | Stores objects; primitive types are added indirectly using autoboxing and unboxing |
 
 
-## Collection Framework
+### Collection Framework
 
 Collection framework is a combination of classes and interfaces.
 
@@ -517,6 +516,16 @@ O(n!)             |     Factorial
 # Time Complexity for Coding Interviews | Big O Notation Explained | Data Structures & Algorithms
 
 [![Time Complexity for Coding Interviews | Big O Notation Explained | Data Structures & Algorithms](https://i.ytimg.com/vi/5T0SiJocPCI/hqdefault.jpg)](https://youtu.be/5T0SiJocPCI)
+
+# ***L-2.6: Recurrence Relation [ T(n)= 8T(n/2) + n² ] | Master Theorem | Example #1 | Algorithm***
+
+[![L-2.6: Recurrence Relation \[ T(n)= 8T(n/2) + n² \] | Master Theorem | Example #1 | Algorithm](https://img.youtube.com/vi/FBKjvXGGCJM/0.jpg)](https://youtu.be/FBKjvXGGCJM?si=QWg1nPILyY_29D8W)
+
+Applied the Master Theorem to solve  $T(n) = 8\,T(n/2) + n^2$.
+
+# ***L-2.7: Recurrence Relation [ T(n)= T(n/2) + c ] | Master Theorem | Example-2 | Algorithm***
+
+[![L-2.7: Recurrence Relation \[ T(n)= T(n/2) + c \] | Master Theorem | Example-2 | Algorithm](https://img.youtube.com/vi/nNabmfua14c/0.jpg)](https://youtu.be/nNabmfua14c?si=YSZCDpi-yTaMFqVk)
 
 ![alt text](image-5.png)
 ```
