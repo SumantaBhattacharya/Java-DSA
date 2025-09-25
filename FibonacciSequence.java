@@ -124,6 +124,9 @@ Call: fibo(0) n = 0 → less than 2 → return 0 once it react here then the fun
     }
  }
 
+ Big O notation - describes the upper bound of the growth rate of a function.
+ O(f(N))/O(g(N)) is understood as the set of functions that are bounded above by f(N)/g(N) in the limit as N→∞
+
  Big omega notation 
  its actually opposite of big O notation
  lower bound
@@ -143,7 +146,66 @@ Call: fibo(0) n = 0 → less than 2 → return 0 once it react here then the fun
 
  point to be noted is best case cannot be greater than worst case either it can be less or equal 
 
- */
+ little O notation
+ ------------------
+
+ - This is also giving the upper bound.
+ 
+ Big O vs little 0
+ - Big O - f = O(g) the growth of f is less than or equal to the growth of g, f <= g. little 0 - f = O(g) the growth of f is strictly less or slower than the growth of g, f < g
+
+    
+    limit as N→∞  f(N)/g(N) = 0
+
+    f = N^2, g = N^3
+    
+    limit as N→∞ N^2/N^3 = limit as N→∞ 1/N = 0
+
+Little Omega Notation 
+--------------------
+
+little omega is represented by 'ω'
+
+    - This is also giving the lower bound but it will not be tight/strict
+    
+    f = ω(g) 
+
+    Big Omega (Ω) vs little omega (ω)
+    - Big Omega - f = Ω(g) the growth of f is greater than or equal to the growth of g, f >= g, (giving a lower bound). little omega - f = ω(g) the growth of f is strictly greater than the growth of g, f > g
+ 
+ limit as N→∞ f(N)/g(N) = ∞
+ 
+  limit as N→∞ N^3/N^2 = limit as N→∞ N = ∞
+
+Auxiliary Space is the extra space or temporary space used by an algorithm.
+Space Complexity of an algorithm is total space taken by the algorithm with respect to the input size. Space complexity includes both Auxiliary space and space used by input. For example, if we want to compare standard sorting algorithms on the basis of space, then Auxiliary Space would be a better criteria than Space Complexity.
+Merge Sort uses O(n) auxiliary space, Insertion sort and Heap Sort use 0(1) auxiliary space. Space complexity of all these sorting algorithms is O(n) though.
+
+Space Complexity =  input Space + Auxiliary Space 
+Auxiliary Space - Space which is used by the algorithm apart from the space used by input
+Input Space - Space which is used by the inputs to the algorithm
+
+In binary Search, Space Complexity is constant. In Linear Search, Space Complexity is constant. In Bubble Sort, Space Complexity is constant. In Selection Sort, Space Complexity is constant. In Insertion Sort, Space Complexity is constant.
+
+for(int i =1; i <= n){// 
+for(int j =1; j <= k; j++){
+   // some operation that take time 't'
+}
+   i = 1+k;// this loop will break when i is greater than n, i+k, i+2k, i+3k, i+4k, i+5k, i+6k, i+7k, i+8k, i+9k ....i+ x'times k 
+}
+
+inner loop: O(kt) time (running k time * for every time its running its taking t amount of time)
+
+O(kt) * (n-i)/k (how many time the outer loop is running)
+O(kt) * (n-i)/k = O(t(n-i)) - k get's cancelled = O(n) (ignoring the constants and less dominating terms)
+
+(i+ x'th time k) <= n
+xk <= n-i
+x = (n-i)/k (number of times the outer loop is running)
+
+
+
+    */
 
 /*
 
