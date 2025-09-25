@@ -1,4 +1,4 @@
-package Incertion_sort_Images;
+package Insertion_sort_Images;
 
 /* 
 Insertion Sort
@@ -17,7 +17,7 @@ Step 6: Repeat steps 2-5 until the entire array is sorted.
 Incertion sort is basicallly selction sort with addition to bubble sort
 */
 
-public class Incertion_Sort {
+public class Insertion_Sort {
     public static void main(String[] args) {
 
         int[] arr = {
