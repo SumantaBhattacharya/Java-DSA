@@ -518,7 +518,14 @@ O(n!)             |     Factorial
 
 [![Time Complexity for Coding Interviews | Big O Notation Explained | Data Structures & Algorithms](https://i.ytimg.com/vi/5T0SiJocPCI/hqdefault.jpg)](https://youtu.be/5T0SiJocPCI)
 
+![alt text](image-5.png)
+```
+Auxiliary Space is the extra space or temporary space used by an algorithm.
 
+Space Complexity of an algorithm is total space taken by the algorithm with respect to the input size. Space complexity includes both Auxiliary space and space used by input.
+
+For example, if we want to compare standard sorting algorithms on the basis of space, then Auxiliary Space would be a better criteria than Space Complexity. Merge Sort uses O(n) auxiliary space, Insertion sort and Heap Sort use 0(1) auxiliary space. Space complexity of all these sorting algorithms is O(n) though.
+```
 ## `Leetcode solved problems`
 ## 1️⃣ Find Numbers with Even Number of Digits  
 **Problem:** [Find Numbers with Even Number of Digits](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/)  
@@ -573,7 +580,11 @@ Then we **multiply backwards**:
 
 ---
 
-# ***OBJECT ORIENTED PROGRAMMING SYSTEMS***
+# ***Java OOPs in One Shot | Object Oriented Programming | Java Language | Placement Course***
+
+[![Java OOPs in One Shot | Object Oriented Programming | Java Language | Placement Course](https://img.youtube.com/vi/bSrm9RXwBaI/0.jpg)](https://youtu.be/bSrm9RXwBaI?si=OQg4A0NRj-JnRFBF)
+
+###### **GAVE AN HOUR REVISION OF OOPS FOR WBJECA PREPARATION**
 
 ## H***ow*** J***ava*** W***orks***:
 `Default Behavior:` When you pass an object to System.out.println(), **Java** automatically calls the object's toString() method
@@ -629,8 +640,11 @@ i. ***poly - many. morphism - forms.***
 `A class with a main method can still be inherited. The fact that it has public static void main(String[] args) doesn’t stop it from being a parent class.`
 
 > *The Math class is part of the java.lang package, which is automatically imported in every Java program.*
+
 <!-- ![Java Inheritance Image](https://d2o2utebsixu4k.cloudfront.net/media/images/blogs/share_image/c64b540d-4d8b-46d1-9bc9-ea52f69572a1.png)
+
 ![Java Inheritance Image](https://tse2.mm.bing.net/th/id/OIP.C5vzQakublCwNBwlV6aGDwHaFj?rs=1&pid=ImgDetMain&o=7&rm=3) -->
+
 ![Java Inheritance Image](https://www.acte.in/wp-content/uploads/2020/08/types-of-inheritance-1024x670.png)
 
 `Each public class must be in its own file`
@@ -647,9 +661,92 @@ Encapsulation
 
 `Blob URLs are temporary and only work within your current browser session.`
 
+# ***MCA***
+ 
+- ***Can be two to three years***
+- ***Going to be held on 30 june***
+- ***Timing around 2hrs***
+
+## ***Analysis of question***
+
+- ***Total number of questions = 100***
+
+- ***Total marks = 120***
+
+- ***There are two categories***
+
+### ***Category-1***
+
+- 80 ***MCQ Questions***
+
+- ***With 4 Options***
+
+- ***Carries 1 mark each***
+
+- ***Will be carrying Nagative marks***
+  - 1/4 = 0.25 = 25%
+
+- ***Only one could be correct***
+
+### ***Category-2***
+
+- 20 ***MCQ Questions***
+
+- ***With 4 Options***
+
+- ***Carries 2 mark each***
+
+- ***Will be carrying no Nagative marking***
+
+- ***Multiple options could be correct***
+
+## ***Syllabus***
+
+- ***C programming***
+- ***OOPS***
+- ***Computer Networks***
+- ***OS***
+- ***Computer Archetechture***
+- ***DSA***
+- ***DBMS***
+- ***Software Engineering***
+- ***Machine Learning***
+
+#### ***Category-1***
+
+- ***What is the output of the following code snippet***
+
+```c 
+#include<studio.h>
+
+main(){
+    int x = 65, *p = &x;
+    void *q=p;
+    char *r=q;
+
+    printf("%c",*r);
+}
+
+#### ***Options***
+
+(A) A ✔ (B) Z (C) 65 (D) None of the above
+
+```
+
+#### ***Explaination***
+
+- ***'p' is a int pointer stores the address of 'x'***
+- ***'q' is a void pointer which means it cans store any type of address***
+- ***'r' is a char pointer which means it can store character type of address***
+
+- ***When we de reference 'r', it treats the value of 'x' as char. means "65" And "65" in ASCII corrosponds to 'A'***
+
+
+2. ***`ROM is a Static Circuit`***
+
 ![Java DSA Image](https://github.com/SumantaBhattacharya/Java-DSA/blob/main/4a2cd984-4f32-45cb-b6ba-4f64e356b9b3.jpg?raw=true)
 
-![Java DSA Image](https://github.com/SumantaBhattacharya/Java-DSA/blob/main/46ca4e21-37fb-43d9-a9d0-b47567b31045.jpg?raw=true)
+<!-- ![Java DSA Image](https://github.com/SumantaBhattacharya/Java-DSA/blob/main/46ca4e21-37fb-43d9-a9d0-b47567b31045.jpg?raw=true) -->
 
 <!-- ![Sumanta Bhattacharya's Certificate](https://files.oaiusercontent.com/file-JE1E6PEXch4ahZAhK1q1tq?se=2025-03-17T16%3A04%3A01Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D299%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D6df2b67f-757d-4bf7-83c0-ba9256132c18.jpg&sig=%2BC09WDeIOM%2Buv2SDeUv1InSUVEE9R/p9kD027WgiiwQ%3D) -->
 
