@@ -129,7 +129,7 @@ public class MyArrayList_Exercise3 {
                 myList.add(num);
 
                 // System.out.println("Element added successfully!");
-                int index = myList.size() -1;
+                int index = myList.size() -1; // gives the last index
 
                 System.out.println("Element added successfully at index " + num + " at index " + index);
 
