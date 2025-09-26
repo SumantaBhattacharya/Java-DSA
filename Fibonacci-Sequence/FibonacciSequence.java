@@ -97,7 +97,21 @@ a1 = 1 , b1 = 1/2, ∑1 (n) = 0 and g(x) = c (constant)
 T(n) = 9 T(N/3) + 4/3 T(5/6 n) + 4 N^3
       a1  b1       a2  b2         g(n)
       
+T(n) = 2 T (n/2) + (n-1)
+       a1   b1      g(n) 
 
+T(n) (time complexity) = T(n/2) + T(n/2) + (n-1) = 2 T(n/2) + (n-1) this is the recurrence relation of merge sort
+((once the array is sorted + once the array is sorted) + merge them (constant abount of time - checking whether a number is greater than equal to or less than middle))
+
+Actual Merge Sort Recurrence:
+T(n) = 2T(n/2) + O(n)
+
+2T(n/2) - Two recursive calls on half-sized arrays
+Merge operation - O(n) - Linear time merging
+
+Total - O(n log n) - Merge sort complexity
+
+Akra Bajji  (1996)
 
 */
  /* 
