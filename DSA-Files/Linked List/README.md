@@ -36,7 +36,6 @@ head
  ⬇             200        300        ̶3̶0̶0̶  400
 [69, 200]-->[68,300]-->[480, 400]-->[440,NULL]
 
-
 Delition of Existing Node
 -------------------------
 i. 
@@ -55,8 +54,6 @@ head
 
 ```
 
-
-
 ```markdown
 ## Double linked list
 
@@ -73,6 +70,39 @@ head
 ```
 
 ![D-Linked List Uses](https://www.sanfoundry.com/wp-content/uploads/2022/08/singly-linked-list-example.png)
+
+```markdown
+> Single linked list is the collection of nodes in which each nodes are connected through links. And in the single linked list, each node contains the data field and only one link. That is the link of the next node. But in the doubly linked list, each node contains the data field and two links. 1 is the link of the next node, another is the link of the previous node. So doubly linked list is the collection of nodes in which every node contains data field and link of the next node, as well as link of the previous node.
+```
+```
+ address[prev link|Data next|link]
+
+ None<---1011[|Data|]---><---5400[|Data|]---><---2100[|Data|]--->None
+              node1                 node2               node3
+```
+```markdown
+> It is the first node of the linked list. And it doesn't contain any previous node. It will store the link to empty value or none or null.
+> this is the Second node 2 contains the data field link of the next node that is node 3 and link of node 1.  That is the previous node. And we have node 3 here. Node 3 contains data field at two links. It contains the link of the previous node, that is node 2 as well as it contains the next node reference as none or null, because we don't have any node after that. So in the doubly linked list, the first node previous references none, and the last node. next reference, next node reference is none or null or empty value.
+
+> the first node reference is stored in the head, and that is the starting point of the linked list. And the last node of the linked list is called as Tail.
+
+>  The list each node contains link of the next node as well as link of the previous node. That's why moving forward and backward in the linked list is easier here.
+
+```
+
+```markdown
+# Incertion At the beginning of the list.
+```
+```
+None<---1010[|68|]---><---4200[|69|]---><---2300[|143|]--->None
+```
+```markdown 
+> So we have here doubly linked list We have three nodes.
+```
+
+```
+   
+```
 
 ```markdown
 ## Circular linked list
@@ -136,3 +166,72 @@ head
 `Space Complexity:` space complexity for a *`stack`* implemented using a linked list is O(N), where N is the number of elements in the *`stack`*. The space complexity is determined by the total number of nodes, and it is proportional to the number of elements in the *`stack`*.
 
 ![Linked List](https://media.geeksforgeeks.org/wp-content/uploads/20240508162652/stack-as-linked-list-768.png)
+
+```javascript
+// My initution
+    public String deleteAt(int index){
+
+       // if linked list itself is null we cannot perform the deletion operation
+        if(head == null){
+            String msg = "NO NODE FOUND INSIDE LL";
+            return msg;
+        }else if (index < 0 || index >= size) {
+            return "INVALID INDEX";
+        }else{
+            // find/search for the perticular node you want to delete
+            // we have index of the node we want to delete that why we use for loop
+            Node temp = head;
+
+// This will always go to the last node, not the node at the specified index.
+            for (int i = 0; i < size; i++) {// delete any node in ll
+                temp = temp.next;
+            }
+
+            // once we find the element 
+            // i. no need to create any node as we are only deleting
+            // ii. delete fist
+            // iii. delete last
+            // iv. find the index of the element you want to delete
+
+//  checking size == 1 and index == size inside the main logic, but these should be handled separately.
+
+            // if it is the only node existing inside the linked list
+            if (size == 1) {
+                head = null;
+                temp.next = null;// temp was already head it is point to null anyway, so `temp.next = null` is unnecessary
+            }
+
+            // if it is the last node you want to delete and make the second last element as the last element
+            if (index == size) {
+                // make the second last element next to null so it cant point to the next node
+                // i. find the second last element.
+                // ii. we would use while because we dont the the index of the second last element
+                Node tempNode = head;
+                while (tempNode.next != tail) {// this will takes us to second last element
+                    tempNode = tempNode.next;
+                }
+
+                // once we found the second last element ii.i make it the last element 
+                temp.next = null;
+                tail = temp;
+
+            }
+
+            // if its(index) is in between the linkedlist then
+                
+            
+
+            String msg = "NODE FOUND INSIDE LL AND DELITION PERFORMED AT THE CHOOSEN INDEX";
+            return msg;
+
+        }
+
+    }
+```
+```
+
+ [100]--->100[69,200]--->200[68,300]--->300[96,400]--->400[6,null] 
+ [100]--->100[69,300]--/->200[68,300]--->300[96,400]--->400[6,null]
+                  ------------------------->
+
+```
