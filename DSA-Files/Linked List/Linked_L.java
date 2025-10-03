@@ -141,56 +141,53 @@ public class Linked_L {
 
     public String deleteAt(int index){
 
-       // if linked list itself is null we cannot perform the deletion operation
-        if(head == null){
-            String msg = "NO NODE FOUND INSIDE LL";
-            return msg;
-        }else if (index < 0 || index >= size) {
-            return "INVALID INDEX";
-        }else{
-            // find/search for the perticular node you want to delete
-            // we have index of the node we want to delete that why we use for loop
-            Node temp = head;
-            for (int i = 0; i < size; i++) {// delete any node in ll
-                temp = temp.next;
-            }
+    if (head == null) {
+        return "NO NODE FOUND INSIDE LL";
+    }
+    if (index < 0 || index >= size) {
+        return "INVALID INDEX";
+    }
 
-            // once we find the element 
-            // i. no need to create any node as we are only deleting
-            // ii. delete fist
-            // iii. delete last
-            // iv. find the index of the element you want to delete
+    // Delete first
+    if (index == 0) {
+        head = head.next;// here there is nothing to do with tail
+        size--;
+        return "NODE DELETED AT INDEX 0";
+    }
 
-            // if it is the only node existing inside the linked list
-            if (size == 1) {
-                head = null;
-                temp.next = null;
-            }
+    // Delete last
+    if (index == size - 1) {
+        // there are two ways i. traverse to the last node of the list ii. find the last node using tail
+        // i. find the second last element and make it the last element
 
-            // if it is the last node you want to delete and make the second last element as the last element
-            if (index == size) {
-                // make the second last element next to null so it cant point to the next node
-                // i. find the second last element.
-                // ii. we would use while because we dont the the index of the second last element
-                Node tempNode = head;
-                while (tempNode.next != tail) {// this will takes us to second last element
-                    tempNode = tempNode.next;
-                }
-
-                // once we found the second last element ii.i make it the last element 
-                temp.next = null;
-                tail = temp;
-
-            }
-
-            // if its(index) is in between the linkedlist then
-                
-            
-
-            String msg = "NODE FOUND INSIDE LL AND DELITION PERFORMED AT THE CHOOSEN INDEX";
-            return msg;
-
+        // we loop until the temp.next != tail
+        Node temp = head;
+        while (temp.next != tail) {
+            temp = temp.next;
         }
+
+        // once we found the second last element make it the last element
+        tail = temp; // updated the tail
+        // cut the link betweeen second last element to the last element
+        tail.next = null;
+        size--;
+        return "NODE DELETED AT LAST INDEX";
+    }
+
+
+    // Case 3: Delete in middle
+    // in order to delete, you need a reference to the previous node so you can update its next pointer
+    // i. Traverse to the node BEFORE the one we want to delete
+    Node temp = head;
+    for(int i=0; i < index-1; i++){// traverse forward
+        // run the loop until you find the node just before the one you want to delete
+        temp = temp.next; // temp.next will run until we get a node before the index node
+    }
+    // now update the temp.next so that it can point to the next to the deleted node
+    temp.next = temp.next.next;// temp.next.next points to node (the node AFTER the one to delete) ii. So we're making prev node point directly to node next to the deleted node
+    size--;
+
+    return "NODE FOUND AND DELETION PERFORMED AT INDEX " + index;
 
     }
 
