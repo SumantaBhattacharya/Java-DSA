@@ -841,6 +841,11 @@ main(){
 
 2. ***`ROM is a Static Circuit`***
 
+```
+C, Python basics/DSA, Java OOP/DSA, Node.js, Express, EJS, SQL, MongoDB → CPU.
+
+HTML/CSS/React → CPU for logic, GPU only for rendering graphics/animations in the browser.
+```
 ![Java DSA Image](https://github.com/SumantaBhattacharya/Java-DSA/blob/main/4a2cd984-4f32-45cb-b6ba-4f64e356b9b3.jpg?raw=true)
 
 <!-- ![Java DSA Image](https://github.com/SumantaBhattacharya/Java-DSA/blob/main/46ca4e21-37fb-43d9-a9d0-b47567b31045.jpg?raw=true) -->
