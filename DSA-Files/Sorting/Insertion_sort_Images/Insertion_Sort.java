@@ -1,4 +1,4 @@
-package Insertion_sort_Images;
+package Sorting.Insertion_sort_Images;
 
 /* 
 Insertion Sort
