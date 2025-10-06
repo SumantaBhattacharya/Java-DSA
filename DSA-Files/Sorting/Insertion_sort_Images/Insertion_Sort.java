@@ -127,3 +127,15 @@ public class Insertion_Sort {
  * this is why it takes part in hybrid sorting algorithms
  * 
  */
+
+ /*
+  JECA-2023
+
+  48. Insertion sort algorithm has a best-case time complexity of ______________.
+
+    (A) O(n) (B) O(n2) 
+    (C) O(n3) (D) O(n4) 
+
+        (A) O(n)
+ 
+*/
