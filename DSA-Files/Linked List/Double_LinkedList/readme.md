@@ -46,6 +46,15 @@ None<---1010[|68|]---><---4200[|69|]---><---2300[|143|]--->None
 > So we have here doubly linked list We have three nodes. Data is 69, 68, 143 And here each node contains two links. This is the first node contains the previous link as none and the second node conatins the next link as the next node link. And the last node contains next node link as none. i. The first step is create the node with two links and a data field, initially I'll take both the link will be takes as none or null. i.ii. whenever we create a node, it will have a reference. So we will take 5000 as its reference. ii. Now, the next step is we want to add this node as the first node of the linked list. 
 ```
 
-```
-   
-```
+ ```markdown
+# JECA-2023
+
+ ## 91. Select the correct Linked list types from the options.
+ ```
+
+ ```bash
+  (A) Linear linked list (B) Circular linked list 
+  (C) Doubly linked list (D) Char linked list 
+ ```
+
+ > `(A) Linear linked list (B) Circular linked list (C) Doubly linked list`
