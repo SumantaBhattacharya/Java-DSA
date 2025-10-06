@@ -63,6 +63,16 @@ public class Bubble_Sort {
      * element).
      * Continue until the array is fully sorted.
      */
+    /*
+     JECA-2023
+     
+     47. Bubble sort algorithm has a worst-case time complexity  of ______________.
+
+        (A) O(n) (B) O(n²)
+        (C) O(n^3) (D) O(n^4) 
+        
+        > O(n²)
+    */
 
      public static void  printArray(int arr[]){
          for (int i=0; i < arr.length; i++)
