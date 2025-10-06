@@ -55,6 +55,22 @@ head
 ```
 
 ```markdown
+
+# JECA-2023
+
+## 41. In singly linked list, the time complexity for insertion  at a particular node is ___________.
+ ```
+ ```bash
+     (A) O(1) (B) O(n2) 
+     (C) O(n) (D) O(n logn) 
+ ```
+ ```
+To insert at a particular node in a singly linked list,  you must first traverse the list to find the insertion  point. This traversal has a worst-case time complexity of O (n).
+```
+
+ > `(C) O(n)`
+
+```markdown
 ## Double linked list
 
 > Double linked list is a type of linked list which is a chain of nodes in which each node contains data part as well as to pointer or references pointing both previous node and the next node at the same time, In the first node of the double linked list the previous reference is assigned to none and in the last node of the double Link list, the next reference is assigned to None as well. It facilitates bidirectional traversal.
@@ -100,9 +116,31 @@ None<---1010[|68|]---><---4200[|69|]---><---2300[|143|]--->None
 > So we have here doubly linked list We have three nodes.
 ```
 
-```
-   
-```
+ ```markdown
+ # JECA-2023
+
+ ## 91. Select the correct Linked list types from the options.
+ ```
+
+ ```bash
+  (A) Linear linked list (B) Circular linked list 
+  (C) Doubly linked list (D) Char linked list 
+ ```
+
+ > `(A) Linear linked list (B) Circular linked list (C) Doubly linked list`
+
+ 
+ ```markdown
+ ## 92. Select the correct Linked list operations from the  options.
+ ```
+
+ ```bash
+  (A) Insertion of a node (B) Deletion of a node 
+  (C) Search a node (D) Re-shaping a node 
+ ```
+
+ > `(D) Re-shaping a node`
+ 
 
 ```markdown
 ## Circular linked list
@@ -218,8 +256,6 @@ None<---1010[|68|]---><---4200[|69|]---><---2300[|143|]--->None
             }
 
             // if its(index) is in between the linkedlist then
-                
-            
 
             String msg = "NODE FOUND INSIDE LL AND DELITION PERFORMED AT THE CHOOSEN INDEX";
             return msg;
