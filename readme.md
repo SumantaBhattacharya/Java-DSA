@@ -491,6 +491,8 @@ O(n!)             |     Factorial
 # ***Binary Search & O(log n)*** 
 - *Any algorithm that repeatedly divides the input size by a constant factor (like 2) has O(log n) time complexity.*
 
+[![L-2.1: What is Recurrence Relation | How to Write Binary Search Recurrence Relation | How we Solve them](https://img.youtube.com/vi/NW-naslChdo/0.jpg)](https://youtu.be/NW-naslChdo?si=wfm2s-cnz-SV6OFs)
+
 > Time Complexity != time taken by the algorithm to execute.
 `Time Complexity measures how the number of steps an algorithm performs scales with the size of the input`
 
