@@ -1,5 +1,3 @@
-package Linked_List; // Uncommented and changed from Linked-List to LinkedList
-
 public class LinkedL {
 
     private Node head;
