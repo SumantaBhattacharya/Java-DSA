@@ -723,6 +723,10 @@ type. Singular, double linked list. And circular linked list.
 
 [![Stack Data Structure in One Video | Java Placement Course](https://img.youtube.com/vi/7m1DMYAbdiY/0.jpg)](https://youtu.be/7m1DMYAbdiY?si=slZ1abTiG9ra1TFm)
 
+## ***Complete Queue Data Structure | One Shot | Java Placement Course***
+
+[![Complete Queue Data Structure | One Shot | Java Placement Course](https://img.youtube.com/vi/va_6RmSrKCg/maxresdefault.jpg)](https://youtu.be/va_6RmSrKCg?si=EJ2s0rvFqKSbs1KR)
+
 `Blob URLs are temporary and only work within your current browser session.`
 
 ```
