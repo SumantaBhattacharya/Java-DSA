@@ -699,7 +699,7 @@ type. Singular, double linked list. And circular linked list.
 (v) Ease in implementation: implementing basic operations like insertion, deletion, peak or top, and is empty, etc. Is simpler in linked list
 ```
 
-## *Divide and Conquer Algorithm*
+### *Divide and Conquer Algorithm*
 
 - The *`divide and conquer algorithm`* is recursively breaks down a complex problem into subproblems. Once the solutions to the sub-problems are obtained, they are combined to give a solution to the original problem.
 
@@ -719,6 +719,10 @@ type. Singular, double linked list. And circular linked list.
 
 `Space Complexity:` space complexity for a *`stack`* implemented using a linked list is O(N), where N is the number of elements in the *`stack`*. The space complexity is determined by the total number of nodes, and it is proportional to the number of elements in the *`stack`*.
 
+## ***Stack Data Structure in One Video | Java Placement Course***
+
+[![Stack Data Structure in One Video | Java Placement Course](https://img.youtube.com/vi/7m1DMYAbdiY/0.jpg)](https://youtu.be/7m1DMYAbdiY?si=slZ1abTiG9ra1TFm)
+
 `Blob URLs are temporary and only work within your current browser session.`
 
 ```
@@ -726,6 +730,7 @@ C, Python basics/DSA, Java OOP/DSA, Node.js, Express, EJS, SQL, MongoDB → CPU.
 
 HTML/CSS/React → CPU for logic, GPU only for rendering graphics/animations in the browser.
 ```
+
 ![Java DSA Image](https://github.com/SumantaBhattacharya/Java-DSA/blob/main/4a2cd984-4f32-45cb-b6ba-4f64e356b9b3.jpg?raw=true)
 
 <!-- ![Java DSA Image](https://github.com/SumantaBhattacharya/Java-DSA/blob/main/46ca4e21-37fb-43d9-a9d0-b47567b31045.jpg?raw=true) -->
@@ -735,3 +740,10 @@ HTML/CSS/React → CPU for logic, GPU only for rendering graphics/animations in 
 <!-- 
 ![Sumanta Bhattacharya's Certificate](https://files.oaiusercontent.com/file-XseJoMyVnsgZGNgLKVnidd?se=2025-03-17T15%3A57%3A29Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D299%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3DSUMANTA%2520BHATTACHARYA.png&sig=frWBZHqTDuXZEHPP7hxhueGPPMYqYtVchpbH%2B4U/y0c%3D) -->
 
+<!-- node --watch server.js
+
+"scripts": {
+ "dev": "node --env-file=.env --watch server.js",
+ "start": "node --env-file=.env server.js"
+ } 
+ -->
